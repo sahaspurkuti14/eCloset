@@ -830,6 +830,7 @@ select option
 	margin-top: -2px;
 }
 
+
 /*********************************
 3.3 Main Navigation
 *********************************/
@@ -3533,6 +3534,7 @@ select option
     -o-transform: transform: none;
     transform: none;
 }
+
 .footer .logo a
 {
 	color: #000000;

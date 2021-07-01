@@ -36,7 +36,7 @@
                     <!-- Logo -->
                     <div class="col-lg-2 col-sm-3 col-3 order-1">
                         <div class="logo_container">
-                            <div class="logo"><a href="{{ url('/')}}">e-Closet</a></div>
+                            <div class="logo"><a href="{{ url('/')}}">eCloset</a></div>
                         </div>
                     </div>
 
@@ -53,11 +53,10 @@
                                                 <i class="fas fa-chevron-down"></i>
                                                 <ul class="custom_list clc">
                                                     <li><a class="clc" href="#">All Categories</a></li>
-                                                    <li><a class="clc" href="#">Computers</a></li>
-                                                    <li><a class="clc" href="#">Laptops</a></li>
-                                                    <li><a class="clc" href="#">Cameras</a></li>
-                                                    <li><a class="clc" href="#">Hardware</a></li>
-                                                    <li><a class="clc" href="#">Smartphones</a></li>
+                                                    <li><a class="clc" href="#">Men</a></li>
+                                                    <li><a class="clc" href="#">Women</a></li>
+                                                    <li><a class="clc" href="#">Kids</a></li>
+                                                    <li><a class="clc" href="#">Accessories</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -94,10 +93,10 @@
                             </div>
 
                             <!-- User -->
-                            <div class="user">
+                            <div class="user" style=" margin-left:5%; width:90px;">
                                 <div class="user_container d-flex flex-row align-items-center justify-content-end">
                                     <div class="user_icon"><img src="{{ asset('public/frontend/images/user.svg')}}" alt=""></div>
-                                    <div><a href="{{ route('login')}}">Sign in</a></div>
+                                    <div><a href="{{ route('login')}}"> Sign in </a></div>
                                 </div>
                             </div>
                         </div>
