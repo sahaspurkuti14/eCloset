@@ -1,15 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="wrapper without_header_sidebar">
+
+        
             <!-- contnet wrapper -->
-            <div class="content_wrapper">
+            <div class="container">
+            <div class="row justify-content-center">
+        <div class="col-md-8">
+            
+            <div class="card" style="width: 40rem;padding:15px">
+            <h2>Sign In </h2>
                     <!-- page content -->
                     <div class="login_page center_container">
                         <div class="center_content">
-                            <div class="logo">
-                                <img src="{{asset('public/panel/assets/images/logo.png')}}" alt="" class="img-fluid">
-                            </div>
+                            
                             <form action="{{route('login')}}" class="d-block" method="post">
                                 @csrf
                                 <div class="form-group icon_parent">
@@ -39,17 +43,21 @@
                                     </label>
                                 </div>
                                 <div class="form-group">
-                                    <a class="registration" href="{{route('register')}}">Create new account</a><br>
+                                    Don't have an account?<a class="registration" href="{{route('register')}}">   Register</a><br>
                                     <a href="{{ route('password.request') }}" class="text-white">I forgot my password</a>
-                                    <button type="submit" class="btn btn-blue">Login</button>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary">Login</button>
                                 </div>
                             </form>
-                            <div class="footer">
-                               <p>Copyright &copy; 2020 <a href="https://easylearningbd.com/">easy Learning</a>. All rights reserved.</p>
-                            </div>
+                            
                             
                         </div>
                     </div>
-            </div><!--/ content wrapper -->
-        </div><!--/ wrapper -->
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        
 @endsection
+
+
