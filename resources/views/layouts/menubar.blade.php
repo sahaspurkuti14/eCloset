@@ -221,19 +221,41 @@
     
     <!-- Banner -->
 
-    <div class="banner">
+    <div class="banner" style="height:px;">
         <div class="banner_background" style="background-image:url({{ asset('public/frontend/images/banner_background.jpg')}})"></div>
         <div class="container fill_height">
             <div class="row fill_height">
-                <div class="banner_product_image"><img src="{{ asset('public/frontend/images/banner_product.png')}}" alt=""></div>
-                <div class="col-lg-5 offset-lg-4 fill_height">
-                    <div class="banner_content">
-                        <h1 class="banner_text">new era of smartphones</h1>
-                        <div class="banner_price"><span>$530</span>$460</div>
-                        <div class="banner_product_name">Apple Iphone 6s</div>
-                        <div class="button banner_button"><a href="#">Shop Now</a></div>
+
+            <div class="col-sm-4"></div>
+            <div class="col-sm-8">
+            <div id="box banner_product_image" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ asset('public/frontend/images/banner_product1.jpg')}}" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('public/frontend/images/banner_product2.jpg')}}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('public/frontend/images/banner_product3.jpg')}}" alt="Third slide">
+                        </div>
                     </div>
-                </div>
+                    <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div> 
+
+            </div>
             </div>
         </div>
     </div>

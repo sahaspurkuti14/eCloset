@@ -90,10 +90,9 @@
                                         <div class="cart_price">Rs.0</div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- User -->
-                            <div class="user" style=" margin-left:5%; width:90px;">
+                            </div> <!-- User -->
+                        <div class="col col-lg-2 text-lg-left text-right">
+                            <div class="user" style=" margin-left:7%; width:90px;font-size:18px;">
                                 <div class="user_container d-flex flex-row align-items-center justify-content-end">
                                     <div class="user_icon"><img src="{{ asset('public/frontend/images/user.svg')}}" alt=""></div>
                                     <div><a href="{{ route('login')}}"> Sign in </a></div>
@@ -101,9 +100,13 @@
                             </div>
                         </div>
                     </div>
+
+                         
+
                 </div>
             </div>
         </div>
+</div>
 
 @yield('content')
 
