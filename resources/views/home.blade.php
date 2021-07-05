@@ -168,7 +168,7 @@
                         <div class="panel_header">
                             <div class="panel_title">
                                 <span class="panel_icon"><i class="fas fa-chart-pie"></i></span>
-                                <span>pie chat</span>
+                                <span>pie chart</span>
                             </div>
                         </div>
                         <div class="panel_body">
