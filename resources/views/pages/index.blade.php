@@ -1408,75 +1408,7 @@
         </div>
     </div>
 
-    <!-- Popular Categories -->
-
-    <div class="popular_categories">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="popular_categories_content">
-                        <div class="popular_categories_title">Popular Categories</div>
-                        <div class="popular_categories_slider_nav">
-                            <div class="popular_categories_prev popular_categories_nav"><i class="fas fa-angle-left ml-auto"></i></div>
-                            <div class="popular_categories_next popular_categories_nav"><i class="fas fa-angle-right ml-auto"></i></div>
-                        </div>
-                        <div class="popular_categories_link"><a href="#">full catalog</a></div>
-                    </div>
-                </div>
-                
-                <!-- Popular Categories Slider -->
-
-                <div class="col-lg-9">
-                    <div class="popular_categories_slider_container">
-                        <div class="owl-carousel owl-theme popular_categories_slider">
-
-                            <!-- Popular Categories Item -->
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/popular_1.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Smartphones & Tablets</div>
-                                </div>
-                            </div>
-
-                            <!-- Popular Categories Item -->
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/popular_2.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Computers & Laptops</div>
-                                </div>
-                            </div>
-
-                            <!-- Popular Categories Item -->
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/popular_3.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Gadgets</div>
-                                </div>
-                            </div>
-
-                            <!-- Popular Categories Item -->
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/popular_4.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Video Games & Consoles</div>
-                                </div>
-                            </div>
-
-                            <!-- Popular Categories Item -->
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/popular_5.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Accessories</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<hr>
     <!-- Banner -->
 
     <div class="banner_2">
@@ -3535,56 +3467,6 @@
         </div>
     </div>
 
-    <!-- Adverts -->
-
-    <div class="adverts">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-4 advert_col">
-                    
-                    <!-- Advert Item -->
-
-                    <div class="advert d-flex flex-row align-items-center justify-content-start">
-                        <div class="advert_content">
-                            <div class="advert_title"><a href="#">Trends 2018</a></div>
-                            <div class="advert_text">Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</div>
-                        </div>
-                        <div class="ml-auto"><div class="advert_image"><img src="{{ asset('public/frontend/images/adv_1.png')}}" alt=""></div></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 advert_col">
-                    
-                    <!-- Advert Item -->
-
-                    <div class="advert d-flex flex-row align-items-center justify-content-start">
-                        <div class="advert_content">
-                            <div class="advert_subtitle">Trends 2018</div>
-                            <div class="advert_title_2"><a href="#">Sale -45%</a></div>
-                            <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
-                        </div>
-                        <div class="ml-auto"><div class="advert_image"><img src="{{ asset('public/frontend/images/adv_2.png')}}" alt=""></div></div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 advert_col">
-                    
-                    <!-- Advert Item -->
-
-                    <div class="advert d-flex flex-row align-items-center justify-content-start">
-                        <div class="advert_content">
-                            <div class="advert_title"><a href="#">Trends 2018</a></div>
-                            <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
-                        </div>
-                        <div class="ml-auto"><div class="advert_image"><img src="{{ asset('public/frontend/images/adv_3.png')}}" alt=""></div></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <!-- Trends -->
 
     <div class="trends">
@@ -3999,30 +3881,6 @@
         </div>
     </div>
 
-    <!-- Newsletter -->
-
-    <div class="newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="newsletter_container d-flex flex-lg-row flex-column align-items-lg-center align-items-center justify-content-lg-start justify-content-center">
-                        <div class="newsletter_title_container">
-                            <div class="newsletter_icon"><img src="{{ asset('public/frontend/images/send.png')}}" alt=""></div>
-                            <div class="newsletter_title">Sign up for Newsletter</div>
-                            <div class="newsletter_text"><p>...and receive %20 coupon for first shopping.</p></div>
-                        </div>
-                        <div class="newsletter_content clearfix">
-                            <form action="#" class="newsletter_form">
-                                <input type="email" class="newsletter_input" required="required" placeholder="Enter your email address">
-                                <button class="newsletter_button">Subscribe</button>
-                            </form>
-                            <div class="newsletter_unsubscribe_link"><a href="#">unsubscribe</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
