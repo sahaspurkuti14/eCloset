@@ -32,3 +32,4 @@ Route::get('delete/category/{id}', 'Admin\Category\CategoryController@Deletecate
 Route::get('edit/category/{id}', 'Admin\Category\CategoryController@Editcategory');
 Route::post('update/category/{id}', 'Admin\Category\CategoryController@Updatecategory');
 
+ 
