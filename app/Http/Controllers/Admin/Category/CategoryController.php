@@ -39,10 +39,43 @@ class CategoryController extends Controller
             'alert-type'=>'success'
              );
            return Redirect()->back()->with($notification);
+     }
 
- 
-        
+     public function Deletecategory($id){
+         DB::table('categories')->where('id',$id)->delete();
+         $notification=array(
+            'messege'=>'Category Deleted Successfully',
+            'alert-type'=>'success'
+             );
+           return Redirect()->back()->with($notification);
+     }
+
+     public function Editcategory($id){
+         $category =DB::table('categories')->where('id',$id)->first();
+         return view('admin.category.edit_category',compact('category'));
+
+     }
+
+     public function Updatecategory(Request $request, $id){
+        $validateData = $request->validate([
+        'category_name' => 'required|max:255',
+         ]);
+     
+        $data=array();
+        $data['category_name']=$request->category_name;
+        $update=DB::table('categories')->where('id',$id)->update($data);
+        if ($update) {
+             $notification=array(
+                 'messege'=>'Category Updated Successfully',
+                 'alert-type'=>'success'
+                  );
+                return Redirect()->route('categories')->with($notification);
+        }else{
+            $notification=array(
+                 'messege'=>'Nothing To Update',
+                 'alert-type'=>'error'
+                  );
+                return Redirect()->route('categories')->with($notification);
+        }
     }
-
-
 }
