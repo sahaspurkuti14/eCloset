@@ -53,3 +53,22 @@ Route::post('admin/store/coupon', 'Admin\Category\CouponController@StoreCoupon')
 Route::get('delete/coupon/{id}', 'Admin\Category\CouponController@DeleteCoupon');
 Route::get('edit/coupon/{id}', 'Admin\Category\CouponController@EditCoupon');
 Route::post('update/coupon/{id}', 'Admin\Category\CouponController@UpdateCoupon');
+
+// For Show Sub category with ajax
+Route::get('get/subcategory/{category_id}', 'Admin\ProductController@GetSubcat');
+
+// Products Route
+Route::get('admin/product/all', 'Admin\ProductController@index')->name('all.product');
+Route::get('admin/product/add', 'Admin\ProductController@create')->name('add.product');
+Route::post('admin/store/product', 'Admin\ProductController@store')->name('store.product');
+
+Route::get('inactive/product/{id}', 'Admin\ProductController@inactive');
+Route::get('active/product/{id}', 'Admin\ProductController@active');
+Route::get('delete/product/{id}', 'Admin\ProductController@DeleteProduct');
+
+Route::get('view/product/{id}', 'Admin\ProductController@ViewProduct');
+Route::get('edit/product/{id}', 'Admin\ProductController@EditProduct');
+
+Route::post('update/product/withoutphoto/{id}', 'Admin\ProductController@UpdateProductWithoutPhoto');
+
+Route::post('update/product/photo/{id}', 'Admin\ProductController@UpdateProductPhoto');
