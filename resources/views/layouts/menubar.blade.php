@@ -205,7 +205,7 @@
     <!-- Banner -->
 
     <div class="banner" style="height:px;">
-        <div class="banner_background" style="background-image:url({{ asset('public/frontend/images/banner_background.jpg')}})"></div>
+        <div class="banner_background" style="background-color: #eff6fa;"></div>
         <div class="container fill_height">
             <div class="row fill_height">
 

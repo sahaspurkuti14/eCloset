@@ -1375,10 +1375,11 @@ select option
 	font-size: 14px;
 	font-weight: 400;
 	color: rgba(0,0,0,0.6);
+	text-decoration: line-through;
 }
 .deals_item_name
 {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 	color: #000000;
 }
@@ -1535,6 +1536,12 @@ select option
 .deals_slider_prev
 {
 	margin-right: 4px;
+}
+
+.categories-card
+{
+	width: 100%;
+	height: 100%;
 }
 
 /*********************************
@@ -3524,15 +3531,6 @@ select option
 	height: auto;
 	margin-bottom: 18px;
 	margin-top: -10px;
-}
-.footer .logo
-{
-	top: auto;
-	-webkit-transform: transform: none;
-    -moz-transform: transform: none;
-    -ms-transform: transform: none;
-    -o-transform: transform: none;
-    transform: none;
 }
 
 .footer .logo a
