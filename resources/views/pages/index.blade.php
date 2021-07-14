@@ -293,8 +293,7 @@
 
 
     <div class="banner_2">
-        <div class="banner_2_background"></div>
-        <div class="banner_2_container">
+        <div class="banner_2_container" style="background-color:#E5F3FB;">
             <div class="banner_2_dots"></div>
             <!-- Banner 2 Slider -->
 
