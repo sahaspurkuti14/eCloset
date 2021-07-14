@@ -27,6 +27,59 @@
     
     <header class="header">
 
+        <!-- Top Bar -->
+
+        <div class="top_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-row">
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/phone.png')}}" alt=""></div> $setting->phone_one </div>
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">$setting->email </a></div>
+                        <div class="top_bar_content ml-auto">
+                           
+
+                     @guest
+
+                     @else
+             <div class="top_bar_menu">
+              <ul class="standard_dropdown top_bar_dropdown">
+                
+                  <li> 
+            <a href="" data-toggle="modal" data-target="#exampleModal">My Order Traking</a>                   
+                  </li>
+                                     
+                                </ul>
+                            </div>
+                     @endguest
+
+
+                            <div class="top_bar_user">
+
+                         @guest
+                <div><a href="{{ route('login') }}"><div class="user_icon"><img src="{{ asset('public/frontend/images/user.svg')}}" alt=""></div> Register/Login</a></div>
+                         @else
+
+                    <ul class="standard_dropdown top_bar_dropdown">
+                                    <li>
+           <a href="{{ route('home') }}"><div class="user_icon"><img src="{{ asset('public/frontend/images/user.svg')}}" alt=""></div> Profile<i class="fas fa-chevron-down"></i></a>
+                                        <ul>
+                                            <li><a href="{{ route('user.wishlist') }}">Wishlist</a></li>
+                                            <li><a href="{{ route('user.checkout') }}">Checkout</a></li>
+                                            <li><a href="#">Others</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul> 
+                         @endguest
+ 
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
         <!-- Header Main -->
 
         <div class="header_main">
@@ -36,36 +89,35 @@
                     <!-- Logo -->
                     <div class="col-lg-2 col-sm-3 col-3 order-1">
                         <div class="logo_container">
-                            <div class="logo"><a href="{{ url('/')}}">eCloset</a></div>
+                            <div class="logo"><a href="{{ url('/') }}">eCloset</a></div>
                         </div>
                     </div>
 
 
-                    @php
-                        $category = DB::table('categories')->get();
-                    @endphp
+   @php
+  $category = DB::table('categories')->get();
+   @endphp
                     <!-- Search -->
                     <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
                         <div class="header_search">
                             <div class="header_search_content">
                                 <div class="header_search_form_container">
-                                    <form action="#" class="header_search_form clearfix">
-                                        <input type="search" required="required" class="header_search_input" placeholder="Search for products, brands and more...">
-                                        <div class="custom_dropdown">
-                                            <div class="custom_dropdown_list">
-                                                <span class="custom_dropdown_placeholder clc">All Categories</span>
-                                                <i class="fas fa-chevron-down"></i>
-                                                    
-                                                <ul class="custom_list clc">
-                                                    @foreach($category as $row)
-                                                        <li><a class="clc" href="#">{{ $row->category_name }}</a></li>
-                                                    @endforeach
-                                                </ul>
-                                                
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="header_search_button trans_300" value="Submit"><img src="{{ asset('public/frontend/images/search.png')}}" alt=""></button>
-                                    </form>
+                <form  method="post" action="#" class="header_search_form clearfix">
+                    @csrf
+   <input type="search" required="required" class="header_search_input" placeholder="Search for products..." name="search">
+                    <div class="custom_dropdown">
+                        <div class="custom_dropdown_list">
+                            <span class="custom_dropdown_placeholder clc">All Categories</span>
+                            <i class="fas fa-chevron-down"></i>
+<ul class="custom_list clc">
+  @foreach($category as $row)
+    <li><a class="clc" href="#">{{ $row->category_name }}</a></li>
+    @endforeach
+</ul>
+                        </div>
+                    </div>
+                    <button type="submit" class="header_search_button trans_300" value="Submit"><img src="{{ asset('public/frontend/images/search.png')}}" alt=""></button>
+                </form>
                                 </div>
                             </div>
                         </div>
@@ -75,6 +127,15 @@
                     <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                         <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                             <div class="wishlist d-flex flex-row align-items-center justify-content-end">
+                     @guest
+
+                     @else
+               
+
+        
+
+
+
                                 <div class="wishlist_icon"><img src="{{ asset('public/frontend/images/heart.png')}}" alt=""></div>
                                 <div class="wishlist_content">
                                     <div class="wishlist_text"><a href="#">Wishlist</a></div>
@@ -82,35 +143,26 @@
                                 </div>
                             </div>
 
+                            @endguest
+
                             <!-- Cart -->
                             <div class="cart">
                                 <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                     <div class="cart_icon">
-                                        <img src="images/cart.png" alt="">
-                                        <div class="cart_count"><span>0</span></div>
+                                        <img src="{{ asset('public/frontend/images/cart.png')}}" alt="">
+                                        <div class="cart_count"><span> 0 </span></div>
                                     </div>
                                     <div class="cart_content">
                                         <div class="cart_text"><a href="#">Cart</a></div>
-                                        <div class="cart_price">Rs.0</div>
+                                        <div class="cart_price">0 </div>
                                     </div>
-                                </div>
-                            </div> 
-                            
-                        <!-- User -->
-                        <div class="col col-lg-2 text-lg-left text-right">
-                            <div class="user" style=" margin-left:7%; width:90px;font-size:18px;">
-                                <div class="user_container d-flex flex-row align-items-center justify-content-end">
-                                    <div class="user_icon"><img src="{{ asset('public/frontend/images/user.svg')}}" alt=""></div>
-                                    <div><a href="{{ route('login')}}"> Sign in </a></div>
                                 </div>
                             </div>
                         </div>
-                    </div>                         
-
+                    </div>
                 </div>
             </div>
         </div>
-</div>
 
 @yield('content')
 
