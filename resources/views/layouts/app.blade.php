@@ -16,6 +16,13 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/responsive.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/modify.css') }}">
 
+<!-- chart -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+
+<link rel="stylesheet" href="sweetalert2.min.css">
+
+<script src="https://js.stripe.com/v3/"></script>
+
 </head>
 
 <body>
@@ -130,16 +137,15 @@
                      @guest
 
                      @else
-               
-
         
+                     @php
+         $wishlist = DB::table('wishlists')->where('user_id',Auth::id())->get();
+               @endphp
 
-
-
-                                <div class="wishlist_icon"><img src="{{ asset('public/frontend/images/heart.png')}}" alt=""></div>
+                            <div class="wishlist_icon"><img src="{{ asset('public/frontend/images/heart.png')}}" alt=""></div>
                                 <div class="wishlist_content">
                                     <div class="wishlist_text"><a href="#">Wishlist</a></div>
-                                    <div class="wishlist_count">0</div>
+                                    <div class="wishlist_count">{{ count($wishlist) }}</div>
                                 </div>
                             </div>
 
@@ -148,13 +154,13 @@
                             <!-- Cart -->
                             <div class="cart">
                                 <div class="cart_container d-flex flex-row align-items-center justify-content-end">
-                                    <div class="cart_icon">
+                                <div class="cart_icon">
                                         <img src="{{ asset('public/frontend/images/cart.png')}}" alt="">
-                                        <div class="cart_count"><span> 0 </span></div>
+                                        <div class="cart_count"><span>{{ Cart::count() }}</span></div>
                                     </div>
                                     <div class="cart_content">
-                                        <div class="cart_text"><a href="#">Cart</a></div>
-                                        <div class="cart_price">0 </div>
+                                        <div class="cart_text"><a href="{{ route('show.cart') }}">Cart</a></div>
+                                        <div class="cart_price">Rs.{{ Cart::subtotal() }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -282,6 +288,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="{{ asset('public/frontend/plugins/slick-1.8.0/slick.js')}}"></script>
 <script src="{{ asset('public/frontend/plugins/easing/easing.js')}}"></script>
 <script src="{{ asset('public/frontend/js/custom.js')}}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="{{ asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
 </body>
 
 </html>

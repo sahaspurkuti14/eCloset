@@ -152,7 +152,6 @@
                         <!--   <div class="product_extras">
                       
                             <button class="product_cart_button addcart" data-id="{{ $row->id }}">Add to Cart</button>
-                            </div>
                             </div> -->
 
                         <div class="product_extras">                          
@@ -379,7 +378,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
 
                 
-                <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
+                <div class="product_name"><div><a href="{{url('product/details/'.$row->id.'/'.$row->product_name)}}">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
                     <div class="product_color">
                         <input type="radio" checked name="product_color" style="background:#b19c83">
@@ -391,9 +390,9 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
             </div>
 
 
-             <button class="addwishlist" data-id="{{ $row->id }}" >
+             <a href="{{ URL::to('add/wishlist/'.$row->id)}}">
             <div class="product_fav"><i class="fas fa-heart"></i></div>
-            </button>
+             </a>
             
 
             <ul class="product_marks">
@@ -1041,10 +1040,6 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
 
 
-
-  
-
-
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -1092,7 +1087,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
         var id = $(this).data('id');
         if (id) {
             $.ajax({
-                url: " {{ url('/add/to/cart/') }}/"+id,
+                url: " {{ url('add/to/cart/') }}/"+id,
                 type:"GET",
                 datType:"json",
                 success:function(data){
@@ -1130,19 +1125,10 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
         }
      });
 
-   });
+   }); -->
 
 
-</script> -->
-
-
-
-
-
-
-
-
-
+</script>
 
 
 
@@ -1180,7 +1166,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                   icon: 'error',
                   title: data.error
                 })
-             }0
+             }
  
 
                 },

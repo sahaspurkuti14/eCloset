@@ -22,7 +22,7 @@ class WishlistController extends Controller
 			  if (Auth::Check()) {
              
              if ($check) {
-              return \Response::json(['error' => 'Product Already Has on your wishlist']);	 
+              return \Response::json(['error' => 'Product Already on your wishlist']);	 
              }else{
              	DB::table('wishlists')->insert($data);
           return \Response::json(['success' => 'Product Added on wishlist']);
@@ -31,7 +31,7 @@ class WishlistController extends Controller
              
 			  	 
 			  }else{
-          return \Response::json(['error' => 'At first loing your account']);      
+          return \Response::json(['error' =>'Not logged in !!']);      
 
 			  } 
 
