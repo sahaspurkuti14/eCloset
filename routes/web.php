@@ -95,3 +95,7 @@ Route::get('coupon/remove/', 'CartController@CouponRemove')->name('coupon.remove
 
 Route::get('/product/details/{id}/{product_name}', 'ProductController@ProductView');
 Route::post('/cart/product/add/{id}', 'ProductController@AddCart');
+
+//payment step
+Route::get('payment/page', 'CartController@PaymentPage')->name('payment.step');
+Route::post('user/payment/process/', 'PaymentController@Payment')->name('payment.process');
