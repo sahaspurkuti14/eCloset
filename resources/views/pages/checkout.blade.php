@@ -145,6 +145,7 @@ $vat = $setting->vat;
 
 						<div class="cart_buttons">
 							<button type="button" class="button cart_button_clear">All Cancel</button>
+							<a href="{{ route('payment.step') }}"  class="button cart_button_checkout">Final Step</a> 
 	
 						</div>
 					</div>

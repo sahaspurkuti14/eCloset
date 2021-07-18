@@ -12,9 +12,10 @@
         "php": "^7.2",
         "bumbummen99/shoppingcart": "^4.0",
         "fideloper/proxy": "^4.0",
-        "intervention/image": "dev-master",
+        "intervention/image": "^2.6",
         "laravel/framework": "^6.0",
         "laravel/helpers": "^1.4",
+        "laravel/passport": "9.0",
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
