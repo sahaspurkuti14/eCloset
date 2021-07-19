@@ -19,16 +19,16 @@
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">$850</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.850</h3>
               </div><!-- card-body -->
               <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
                 <div>
                   <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">$2,210</h6>
+                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
                 </div>
                 <div>
                   <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">$320</h6>
+                  <h6 class="tx-white mg-b-0">Rs.320</h6>
                 </div>
               </div><!-- -->
             </div><!-- card -->
@@ -41,16 +41,16 @@
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">$4,625</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.4,625</h3>
               </div><!-- card-body -->
               <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
                 <div>
                   <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">$2,210</h6>
+                  <h6 class="tx-white mg-b-0">$Rs.2,210</h6>
                 </div>
                 <div>
                   <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">$320</h6>
+                  <h6 class="tx-white mg-b-0">Rs.320</h6>
                 </div>
               </div><!-- -->
             </div><!-- card -->
@@ -63,16 +63,16 @@
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">$11,908</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.11,908</h3>
               </div><!-- card-body -->
               <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
                 <div>
                   <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">$2,210</h6>
+                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
                 </div>
                 <div>
                   <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">$320</h6>
+                  <h6 class="tx-white mg-b-0">Rs.320</h6>
                 </div>
               </div><!-- -->
             </div><!-- card -->
@@ -85,16 +85,16 @@
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">$91,239</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.91,239</h3>
               </div><!-- card-body -->
               <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
                 <div>
                   <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">$2,210</h6>
+                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
                 </div>
                 <div>
                   <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">$320</h6>
+                  <h6 class="tx-white mg-b-0">Rs.320</h6>
                 </div>
               </div><!-- -->
             </div><!-- card -->
