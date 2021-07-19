@@ -208,9 +208,9 @@ $category = DB::table('categories')->get();
                         <h1 class="banner_text">{{ $slider->product_name }}</h1>
                         <div class="banner_price">
                     @if($slider->discount_price == NULL)
-                   <h2> ${{ $slider->selling_price }} </h2>
+                   <h2> Rs.{{ $slider->selling_price }} </h2>
                     @else
-                 <span>${{ $slider->selling_price }}</span>${{ $slider->discount_price }}
+                 <span>Rs.{{ $slider->selling_price }}</span>Rs.{{ $slider->discount_price }}
                     @endif
 
 

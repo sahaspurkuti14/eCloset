@@ -262,8 +262,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             <ul class="logos_list">
                                 <li><a href="#"><img src="{{ asset('public/frontend/images/logos_1.png')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{ asset('public/frontend/images/logos_2.png')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('public/frontend/images/logos_3.png')}}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ asset('public/frontend/images/logos_4.png')}}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
