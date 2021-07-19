@@ -40,8 +40,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col d-flex flex-row">
-                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/phone.png')}}" alt=""></div> $setting->phone_one </div>
-                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">$setting->email </a></div>
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/phone.png')}}" alt=""></div> +977 123456789 </div>
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">ecloset-support@gmail.com </a></div>
                         <div class="top_bar_content ml-auto">
                            
 
@@ -205,15 +205,12 @@
                     <div class="footer_column">
                         <div class="footer_title">Find it Fast</div>
                         <ul class="footer_list">
-                            <li><a href="#">Computers & Laptops</a></li>
-                            <li><a href="#">Cameras & Photos</a></li>
-                            <li><a href="#">Hardware</a></li>
-                            <li><a href="#">Smartphones & Tablets</a></li>
-                            <li><a href="#">TV & Audio</a></li>
-                        </ul>
-                        <div class="footer_subtitle">Gadgets</div>
-                        <ul class="footer_list">
-                            <li><a href="#">Car Electronics</a></li>
+                            <li><a href="#">Men's Upperwears</a></li>
+                            <li><a href="#">Men's Bottomwears</a></li>
+                            <li><a href="#">Men's Innerwears</a></li>
+                            <li><a href="#">Men's Shoes</a></li>
+                            <li><a href="#">Men's Accessories</a></li>
+                            <li><a href="#">Kids' Dresses</a></li>
                         </ul>
                     </div>
                 </div>
@@ -221,11 +218,11 @@
                 <div class="col-lg-2">
                     <div class="footer_column">
                         <ul class="footer_list footer_list_2">
-                            <li><a href="#">Video Games & Consoles</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Cameras & Photos</a></li>
-                            <li><a href="#">Hardware</a></li>
-                            <li><a href="#">Computers & Laptops</a></li>
+                        <li><a href="#">Women's Upperwears</a></li>
+                            <li><a href="#">Women's Bottomwears</a></li>
+                            <li><a href="#">Women's Innerwears</a></li>
+                            <li><a href="#">Women'ss Shoes</a></li>
+                            <li><a href="#">Women's Accessories</a></li>
                         </ul>
                     </div>
                 </div>
