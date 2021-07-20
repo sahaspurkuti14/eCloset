@@ -1703,13 +1703,18 @@ select option
 .product_name
 {
 	margin-top: 4px;
+	margin-left: 3px ;
+	margin-right: 3px;
 	overflow: hidden;
-}
-.product_name div
-{
-	width: 100%;
+	white-space: normal;
 	
 }
+
+.product_name div
+{
+	width: 100%;	
+}
+
 .product_name div a
 {
 	font-size: 14px;
@@ -3657,3 +3662,4 @@ select option
 {
 	margin-right: 0px;
 }
+

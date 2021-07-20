@@ -10,7 +10,7 @@ Route::get('/password-change', 'HomeController@changePassword')->name('password.
 Route::post('/password-update', 'HomeController@updatePassword')->name('password.update');
 Route::get('/user/logout', 'HomeController@Logout')->name('user.logout');
 
-//admin=======
+//admin======= 
 Route::get('admin/home', 'AdminController@index');
 Route::get('admin', 'Admin\LoginController@showLoginForm')->name('admin.login');
 Route::post('admin', 'Admin\LoginController@login');

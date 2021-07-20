@@ -135,7 +135,7 @@
         <!-- Slider Item -->
             <div class="featured_slider_item">
                 <div class="border_active"></div>
-                    <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center" style="padding:5%">
                         <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                         <div class="product_content">
 
