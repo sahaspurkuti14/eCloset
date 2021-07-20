@@ -381,11 +381,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="{{url('product/details/'.$row->id.'/'.$row->product_name)}}">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <div class="product_color">
-                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                        <input type="radio" name="product_color" style="background:#000000">
-                        <input type="radio" name="product_color" style="background:#999999">
-                    </div>
+                    
                     <button class="product_cart_button">Add to Cart</button>
                 </div>
             </div>
@@ -483,11 +479,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <div class="product_color">
-                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                        <input type="radio" name="product_color" style="background:#000000">
-                        <input type="radio" name="product_color" style="background:#999999">
-                    </div>
+                    
                     <button class="product_cart_button">Add to Cart</button>
                 </div>
             </div>
@@ -584,11 +576,6 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <div class="product_color">
-                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                        <input type="radio" name="product_color" style="background:#000000">
-                        <input type="radio" name="product_color" style="background:#999999">
-                    </div>
                     <button class="product_cart_button">Add to Cart</button>
                 </div>
             </div>
