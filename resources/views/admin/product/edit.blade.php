@@ -25,7 +25,7 @@
           <h6 class="card-body-title">Update Product 
  <a href="{{ route('all.product')}}" class="btn btn-success btn-sm pull-right"> All Product</a>
           </h6>
-          <p class="mg-b-20 mg-sm-b-30">Update Prodcut From</p>
+          <p class="mg-b-20 mg-sm-b-30">Update Product Form</p>
 
        <form method="post" action="{{ url('update/product/withoutphoto/'.$product->id) }} " enctype="multipart/form-data">    
         @csrf

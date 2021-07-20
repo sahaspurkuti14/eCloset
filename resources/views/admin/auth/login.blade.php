@@ -2,11 +2,12 @@
 
 @section('admin_content')
     
-        <div class="d-flex align-items-center justify-content-center bg-sl-primary ht-100v">
-
-      <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 bg-white">
-        <div class="signin-logo tx-center tx-24 tx-bold tx-inverse">eCloset<span class="tx-info tx-normal">admin</span></div>
-        <div class="tx-center mg-b-60">panel</div>
+        <div class="d-flex align-items-center justify-content-center bg-sl-primary ht-100v" style="background-color:#DFFDEA;">
+    
+      <div class="login-wrapper wd-300 wd-xs-350 pd-25 pd-xs-40 bg-white" style="border: 1px solid grey; padding: 20px; border-radius: 25px; background-color:#D8E4FF; box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.41);">
+        <div class="signin-logo tx-center tx-24 tx-bold tx-inverse">eCloset</div>
+        <div class="tx-center tx-normal">Admin Panel</div>
+        <br>
 
         <form action="{{ route('admin.login')}}" method="post">
             @csrf

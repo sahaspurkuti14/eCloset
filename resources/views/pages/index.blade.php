@@ -135,7 +135,7 @@
         <!-- Slider Item -->
             <div class="featured_slider_item">
                 <div class="border_active"></div>
-                    <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                    <div class="product_item discount d-flex flex-column align-items-center justify-content-center text-center" style="padding:5%">
                         <div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="{{ asset( $row->image_one )}}" alt="" style="height: 120px; width: 100px;"></div>
                         <div class="product_content">
 
@@ -381,11 +381,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="{{url('product/details/'.$row->id.'/'.$row->product_name)}}">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <div class="product_color">
-                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                        <input type="radio" name="product_color" style="background:#000000">
-                        <input type="radio" name="product_color" style="background:#999999">
-                    </div>
+                    
                     <button class="product_cart_button">Add to Cart</button>
                 </div>
             </div>
@@ -483,11 +479,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <div class="product_color">
-                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                        <input type="radio" name="product_color" style="background:#000000">
-                        <input type="radio" name="product_color" style="background:#999999">
-                    </div>
+                    
                     <button class="product_cart_button">Add to Cart</button>
                 </div>
             </div>
@@ -584,11 +576,6 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <div class="product_color">
-                        <input type="radio" checked name="product_color" style="background:#b19c83">
-                        <input type="radio" name="product_color" style="background:#000000">
-                        <input type="radio" name="product_color" style="background:#999999">
-                    </div>
                     <button class="product_cart_button">Add to Cart</button>
                 </div>
             </div>
