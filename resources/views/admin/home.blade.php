@@ -4,7 +4,7 @@
  <!-- ########## START: MAIN PANEL ########## -->
  <div class="sl-mainpanel">
       <nav class="breadcrumb sl-breadcrumb">
-        <a class="breadcrumb-item" href="index.html">e-Closet</a>
+        <a class="breadcrumb-item" href="index.html">eCloset</a>
         <span class="breadcrumb-item active">Dashboard</span>
       </nav>
 
