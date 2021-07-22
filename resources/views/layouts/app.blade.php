@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/main_styles.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/responsive.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/modify.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/chatbot.css') }}">
 
 <!-- chart -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
@@ -144,7 +145,7 @@
 
                             <div class="wishlist_icon"><img src="{{ asset('public/frontend/images/heart.png')}}" alt=""></div>
                                 <div class="wishlist_content">
-                                    <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                                    <div class="wishlist_text"><a href="{{ route('user.wishlist') }}">Wishlist</a></div>
                                     <div class="wishlist_count">{{ count($wishlist) }}</div>
                                 </div>
                             </div>
@@ -262,6 +263,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             <ul class="logos_list">
                                 <li><a href="#"><img src="{{ asset('public/frontend/images/logos_1.png')}}" alt=""></a></li>
                                 <li><a href="#"><img src="{{ asset('public/frontend/images/logos_2.png')}}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ asset('public/frontend/images/logos_3.png')}}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>

@@ -124,7 +124,3 @@ Route::get('admin/success/payment', 'Admin\OrderController@SuccessPayment')->nam
 Route::get('admin/delevery/process/{id}', 'Admin\OrderController@DeleveryProcess');
 Route::get('admin/delevery/done/{id}', 'Admin\OrderController@DeleveryDone');
 
-//chatbot
-
-Route::get('/botman', 'BotManController@handle');
-Route::post('/botman', 'BotManController@handle');
