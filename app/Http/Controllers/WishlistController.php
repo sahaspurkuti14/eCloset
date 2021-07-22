@@ -33,9 +33,11 @@ class WishlistController extends Controller
 			  }else{
           return \Response::json(['error' =>'Not logged in !!']);      
 
-			  } 
+			  }            
+     
+         }
 
-   }
+
 
 
 

@@ -64,7 +64,7 @@ class CartController extends Controller
     public function removeCart($rowId){
     	Cart::remove($rowId);
     	$notification=array(
-                        'messege'=>'Product Remove form Cart',
+                        'messege'=>'Product Removed form Cart',
                         'alert-type'=>'success'
                          );
                        return Redirect()->back()->with($notification);

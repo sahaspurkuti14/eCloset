@@ -115,8 +115,10 @@
                         </div>
                     </div>
                     
-                    <!-- Featured -->
-                    <div class="featured">
+    
+    
+<!-- Featured -->
+                <div class="featured">
                         <div class="tabbed_container">
                             <div class="tabs">
                                 <ul class="clearfix">
@@ -373,16 +375,17 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
                 
                 <div class="product_name"><div><a href="{{url('product/details/'.$row->id.'/'.$row->product_name)}}">{{ $row->product_name }}</a></div></div>
-                <div class="product_extras">
-                    
-                    <button class="product_cart_button">Add to Cart</button>
+                <div class="product_extras">   
+
+                            <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                 </div>
             </div>
 
 
-             <a href="{{ URL::to('add/wishlist/'.$row->id)}}">
-            <div class="product_fav"><i class="fas fa-heart"></i></div>
-             </a>
+            
+            <button class="addwishlist" data-id="{{ $row->id }}" >
+                    <div class="product_fav"><i class="fas fa-heart"></i></div>
+                </button>
             
 
             <ul class="product_marks">
@@ -473,7 +476,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
                     
-                    <button class="product_cart_button">Add to Cart</button>
+                <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                 </div>
             </div>
 
@@ -569,7 +572,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                 
                 <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
-                    <button class="product_cart_button">Add to Cart</button>
+                <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                 </div>
             </div>
 
@@ -672,7 +675,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 <div class="product_price discount">Rs.{{ $row->discount_price }}<span>Rs.{{ $row->selling_price }}</span></div>
       @endif 
 
-      <a href="" class="btn btn-danger btn-sm">Add to Cart</a>
+      <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                         </div>
                     </div>
                     <ul class="trends_marks">
@@ -906,80 +909,8 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 </div>
 
 
-    <!-- CHAT BAR BLOCK -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/chatbot.css') }}">
-  
-
-    <div class="chat-bar-collapsible">
-        
-       
-            <i id="chat-icon" type="button" style="color: white" class="fa fa-fw fa-comments-o collapsible"></i>
-       
 
 
-
-        <div class="content">
-            
-            <div class="full-chat-block">
-                <!-- MESSAGE CONTAINER -->
-                
-                <div class="outer-container">
-                    
-                    <div class="chat-container">
-                        <!-- MESSAGES -->
-                        
-                        <div id="chat-box">
-                            
-                            <h5 id="chat-timestamp"></h5>
-                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                        
-                        </div>
-                        <!-- User input box -->
-                        
-                        <div class="chat-bar-input-block">
-                            
-                            <div id="userInput">
-                                <input type="text" id="textInput" class="input-box" name="msg" placeholder="Tap 'Enter' to send a message">
-                                <p></p>
-                            </div>
-
-                            <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: crimson" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
-                                <i id="chat-icon" style="color: #333" class="fa fa-fw fa-send" onclick="sendButton()"></i>
-
-                            </div>
-                        
-                        </div>
-                        
-                        <div id="chat-bar-bottom">
-                            
-                            <p></p>
-                        
-                        </div>
-                    
-                    </div>
-                
-                </div>
-            
-            </div>
-        
-        </div>
-
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    
-    <script src="{{ asset('public/frontend/js/responses.js')}}"></script>
-    <script src="{{ asset('public/frontend/js/chat.js')}}"></script>
-    
-
-
-
-    <!---------------------->
 
 
 

@@ -77,6 +77,7 @@ Route::post('update/product/photo/{id}', 'Admin\ProductController@UpdateProductP
 
 Route::get('add/wishlist/{id}', 'WishlistController@addWishlist');
 
+
 // Add to Cart Route 
 Route::get('add/to/cart/{id}', 'CartController@AddCart');
 Route::get('check', 'CartController@check');

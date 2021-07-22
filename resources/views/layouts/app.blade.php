@@ -173,6 +173,81 @@
 
 @yield('content')
 
+<!------ CHATBOT ----->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/frontend/styles/chatbot.css') }}">
+  
+
+    <div class="chat-bar-collapsible">
+        
+       
+            <i id="chat-icon" type="button" style="color: white" class="fa fa-fw fa-comments-o collapsible"></i>
+       
+
+
+
+        <div class="content">
+            
+            <div class="full-chat-block">
+                <!-- MESSAGE CONTAINER -->
+                
+                <div class="outer-container">
+                    
+                    <div class="chat-container">
+                        <!-- MESSAGES -->
+                        
+                        <div id="chat-box">
+                            
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        
+                        </div>
+                        <!-- User input box -->
+                        
+                        <div class="chat-bar-input-block">
+                            
+                            <div id="userInput">
+                                <input type="text" id="textInput" class="input-box" name="msg" placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+
+                            </div>
+                        
+                        </div>
+                        
+                        <div id="chat-bar-bottom">
+                            
+                            <p></p>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+    <script src="{{ asset('public/frontend/js/responses.js')}}"></script>
+    <script src="{{ asset('public/frontend/js/chat.js')}}"></script>
+    
+
+
+
+    <!---------------------->
+
 
     <!-- Footer -->
 
