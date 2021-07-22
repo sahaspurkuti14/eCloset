@@ -6,11 +6,29 @@
     'aliases' => 
     array (
     ),
-    'reference' => '0eca2b6ec7d8f7efcb5dd8292fa634541da84913',
+    'reference' => '15339d392ebbeba5841bdccd9190e549dae061ab',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'botman/botman' => 
+    array (
+      'pretty_version' => '2.6.1',
+      'version' => '2.6.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '127f7dc0aef5bc0561f8a2a8a3b246fe951b63e7',
+    ),
+    'botman/driver-web' => 
+    array (
+      'pretty_version' => '1.5.1',
+      'version' => '1.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7399fd2994ee4c6c14c0a69268269e81fd2cd7f6',
+    ),
     'bumbummen99/shoppingcart' => 
     array (
       'pretty_version' => '4.0.0',
@@ -96,6 +114,15 @@
       array (
       ),
       'reference' => '0dbf5d78455d4d6a41d186da50adc1122ec066f4',
+    ),
+    'evenement/evenement' => 
+    array (
+      'pretty_version' => 'v3.0.1',
+      'version' => '3.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '531bfb9d15f8aa57454f5f0285b18bec903b8fb7',
     ),
     'facade/flare-client-php' => 
     array (
@@ -465,7 +492,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '0eca2b6ec7d8f7efcb5dd8292fa634541da84913',
+      'reference' => '15339d392ebbeba5841bdccd9190e549dae061ab',
     ),
     'laravel/passport' => 
     array (
@@ -588,6 +615,15 @@
       array (
       ),
       'reference' => '9738e495f288eec0b187e310b7cdbbb285777dbe',
+    ),
+    'mpociot/pipeline' => 
+    array (
+      'pretty_version' => '1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3584db4a0de68067b2b074edfadf6a48b5603a6b',
     ),
     'myclabs/deep-copy' => 
     array (
@@ -910,6 +946,69 @@
       ),
       'reference' => '7e1633a6964b48589b142d60542f9ed31bd37a92',
     ),
+    'react/cache' => 
+    array (
+      'pretty_version' => 'v1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4bf736a2cccec7298bdf745db77585966fc2ca7e',
+    ),
+    'react/dns' => 
+    array (
+      'pretty_version' => 'v1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2a5a74ab751e53863b45fb87e1d3913884f88248',
+    ),
+    'react/event-loop' => 
+    array (
+      'pretty_version' => 'v1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'be6dee480fc4692cec0504e65eb486e3be1aa6f2',
+    ),
+    'react/promise' => 
+    array (
+      'pretty_version' => 'v2.8.0',
+      'version' => '2.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f3cff96a19736714524ca0dd1d4130de73dbbbc4',
+    ),
+    'react/promise-timer' => 
+    array (
+      'pretty_version' => 'v1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '607dd79990e32fcb402cb0a176b4a4be12f97e7c',
+    ),
+    'react/socket' => 
+    array (
+      'pretty_version' => 'v1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '92fb72d8e58fff94da84ea86ebda26788ddd672f',
+    ),
+    'react/stream' => 
+    array (
+      'pretty_version' => 'v1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7a423506ee1903e89f1e08ec5f0ed430ff784ae9',
+    ),
     'rhumsaa/uuid' => 
     array (
       'replaced' => 
@@ -1033,6 +1132,15 @@
       array (
       ),
       'reference' => '99732be0ddb3361e16ad77b68ba41efc8e979019',
+    ),
+    'spatie/macroable' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7a99549fc001c925714b329220dea680c04bfa48',
     ),
     'stripe/stripe-php' => 
     array (
@@ -1317,6 +1425,15 @@
       array (
       ),
       'reference' => '75a63c33a8577608444246075ea0af0d052e452a',
+    ),
+    'tightenco/collect' => 
+    array (
+      'pretty_version' => 'v8.34.0',
+      'version' => '8.34.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b069783ab0c547bb894ebcf8e7f6024bb401f9d2',
     ),
     'tijsverkoyen/css-to-inline-styles' => 
     array (

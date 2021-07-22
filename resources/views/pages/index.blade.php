@@ -704,120 +704,6 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
         </div>
     </div>
 
-    <!-- Reviews -->
-
-    <div class="reviews">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    
-                    <div class="reviews_title_container">
-                        <h3 class="reviews_title">Latest Reviews</h3>
-                        <div class="reviews_all ml-auto"><a href="#">view all <span>reviews</span></a></div>
-                    </div>
-
-                    <div class="reviews_slider_container">
-                        
-                        <!-- Reviews Slider -->
-                        <div class="owl-carousel owl-theme reviews_slider">
-                            
-                            <!-- Reviews Slider Item -->
-                            <div class="owl-item">
-                                <div class="review d-flex flex-row align-items-start justify-content-start">
-                                    <div><div class="review_image"><img src="{{ asset('public/frontend/images/2.jpg')}}" alt=""></div></div>
-                                    <div class="review_content">
-                                        <div class="review_name">Ram </div>
-                                        <div class="review_rating_container">
-                                            <div class="rating_r rating_r_4 review_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                            <div class="review_time">2 day ago</div>
-                                        </div>
-                                        <div class="review_text"><p>This is a review by a customer1.</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Reviews Slider Item -->
-                            <div class="owl-item">
-                                <div class="review d-flex flex-row align-items-start justify-content-start">
-                                    <div><div class="review_image"><img src="{{ asset('public/frontend/images/1.jpg')}}" alt=""></div></div>
-                                    <div class="review_content">
-                                        <div class="review_name">Hari</div>
-                                        <div class="review_rating_container">
-                                            <div class="rating_r rating_r_4 review_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                            <div class="review_time">2 day ago</div>
-                                        </div>
-                                        <div class="review_text"><p>This is a review by another customer.</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Reviews Slider Item -->
-                            <div class="owl-item">
-                                <div class="review d-flex flex-row align-items-start justify-content-start">
-                                    <div><div class="review_image"><img src="{{ asset('public/frontend/images/3.jpg')}}" alt=""></div></div>
-                                    <div class="review_content">
-                                        <div class="review_name">Shyam</div>
-                                        <div class="review_rating_container">
-                                            <div class="rating_r rating_r_4 review_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                            <div class="review_time">2 day ago</div>
-                                        </div>
-                                        <div class="review_text"><p>This is a review by another another customer.</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Reviews Slider Item -->
-                            <div class="owl-item">
-                                <div class="review d-flex flex-row align-items-start justify-content-start">
-                                    <div><div class="review_image"><img src="{{ asset('public/frontend/images/5.jpg')}}" alt=""></div></div>
-                                    <div class="review_content">
-                                        <div class="review_name">Kale</div>
-                                        <div class="review_rating_container">
-                                            <div class="rating_r rating_r_4 review_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                            <div class="review_time">2 day ago</div>
-                                        </div>
-                                        <div class="review_text"><p>This is a review by a kale customer.</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Reviews Slider Item -->
-                            <div class="owl-item">
-                                <div class="review d-flex flex-row align-items-start justify-content-start">
-                                    <div><div class="review_image"><img src="{{ asset('public/frontend/images/2.jpg')}}" alt=""></div></div>
-                                    <div class="review_content">
-                                        <div class="review_name">Gore</div>
-                                        <div class="review_rating_container">
-                                            <div class="rating_r rating_r_4 review_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                            <div class="review_time">2 day ago</div>
-                                        </div>
-                                        <div class="review_text"><p>This is a review by a gore customer.</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Reviews Slider Item -->
-                            <div class="owl-item">
-                                <div class="review d-flex flex-row align-items-start justify-content-start">
-                                    <div><div class="review_image"><img src="{{ asset('public/frontend/images/7.jpg')}}" alt=""></div></div>
-                                    <div class="review_content">
-                                        <div class="review_name">Dalle</div>
-                                        <div class="review_rating_container">
-                                            <div class="rating_r rating_r_4 review_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                            <div class="review_time">2 day ago</div>
-                                        </div>
-                                        <div class="review_text"><p>This is a review by a dalle customer.</p></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="reviews_dots"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Recently Viewed -->
 
@@ -1169,6 +1055,25 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
 
 </script>
+
+<!-- chatbot -->
+<link rel="stylesheet" type="text/css" href="#">
+
+    <script>
+
+	    var botmanWidget = {
+
+	        aboutText: 'ssdsd',
+
+	        introMessage: " Hi! this is a chatbot"
+
+	    };
+
+    </script>
+
+  
+
+    <script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
 
 
 
