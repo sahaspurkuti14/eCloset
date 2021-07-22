@@ -109,7 +109,7 @@ function getBotResponse(input) {
     
     }
     else{
-        return "try something else!!"
+        return "Sorry for inconvenience..please try something else"
     }
 
    
