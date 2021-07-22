@@ -52,7 +52,8 @@
 
                                 </div>
                                 <div class="deals_info_line d-flex flex-row justify-content-start">
-                                    <div class="deals_item_name">{{ $ht->product_name }}</div>
+                                    <div class="deals_item_name"><a href="{{ url('product/details/'.$ht->id.'/'.$ht->product_name) }}">{{ $ht->product_name }}</a></div>
+
 
                                     @if($ht->discount_price == NULL)
                                     <div class="deals_item_price ml-auto">Rs.{{ $ht->selling_price }}</div>
@@ -149,7 +150,9 @@
 
 
                 
-                        <div class="product_name"><div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div></div>
+                        <div class="product_name">
+                            <div><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
+                        </div>
                 
 
                         <!--   <div class="product_extras">
@@ -302,13 +305,12 @@
                 <div class="col-lg-4 col-md-6 fill_height">
                     <div class="banner_2_content">
                         <div class="banner_2_category"><h4>{{ $row->category_name }}</h4></div>
-                        <div class="banner_2_title">{{ $row->product_name }}</div>
+                        <div class="banner_2_title"><a href="{{ url('product/details/'.$row->id.'/'.$row->product_name) }}">{{ $row->product_name }}</a></div>
                         <div class="banner_2_text"><h4> {{ $row->brand_name }}</h4> <br>
                             <h2>Rs.{{ $row->selling_price }} </h2>
 
                         </div>
                         <div class="rating_r rating_r_4 banner_2_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                        <div class="button banner_2_button"><a href="#">Explore</a></div>
                     </div>
                     
                 </div>
@@ -1015,7 +1017,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
             $.ajax({
                 url: " {{ url('add/wishlist/') }}/"+id,
                 type:"GET",
-                datType:"json",
+                dataType:"json",
                 success:function(data){
              const Toast = Swal.mixin({
                   toast: true,

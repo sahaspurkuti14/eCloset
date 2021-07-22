@@ -45,6 +45,20 @@
 					<div class="cart_item_text"> {{ $row->product_size }}</div>
 				</div>
                 @endif
+
+
+				@if($row->discount_price == NULL)
+					<div class="cart_item_color cart_info_col">
+					<div class="cart_item_title">Price</div>
+					<div class="cart_item_text"> {{ $row->selling_price }}</div>
+				</div>
+
+				@else
+                <div class="cart_item_color cart_info_col">
+					<div class="cart_item_title">Price</div>
+					<div class="cart_item_text"> {{ $row->discount_price }}</div>
+				</div>
+                @endif
                   
                 <div class="cart_item_color cart_info_col">
 					<div class="cart_item_title">Action</div><br>
@@ -159,6 +173,40 @@
   </div>
 </div>
 
+
+
+<script type="text/javascript">
+    function productview(id){
+        $.ajax({
+         url: "{{ url('/cart/product/view/') }}/"+id, 
+         type: "GET",
+         dataType:"json",
+         success:function(data){
+       $('#pcode').text(data.product.product_code);
+       $('#pcat').text(data.product.category_name);
+       $('#psub').text(data.product.subcategory_name);
+       $('#pbrand').text(data.product.brand_name);
+       $('#pname').text(data.product.product_name);
+       $('#pimage').attr('src',data.product.image_one);
+       $('#product_id').val(data.product.id);
+
+       var d = $('select[name="color"]').empty();
+       $.each(data.color,function(key,value){
+       $('select[name="color"]').append('<option value="'+value+'">'+value+'</option>'); 
+        });
+
+          var d = $('select[name="size"]').empty();
+       $.each(data.size,function(key,value){
+       $('select[name="size"]').append('<option value="'+value+'">'+value+'</option>'); 
+        });
+
+
+         }  
+        })
+    }
+
+
+</script>
 
 
 
