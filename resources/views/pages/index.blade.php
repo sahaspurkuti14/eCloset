@@ -703,122 +703,6 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
     </div>
 
 
-    <!-- Recently Viewed -->
-
-    <div class="viewed">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="viewed_title_container">
-                        <h3 class="viewed_title">Recently Viewed</h3>
-                        <div class="viewed_nav_container">
-                            <div class="viewed_nav viewed_prev"><i class="fas fa-chevron-left"></i></div>
-                            <div class="viewed_nav viewed_next"><i class="fas fa-chevron-right"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="viewed_slider_container">
-                        
-                        <!-- Recently Viewed Slider -->
-
-                        <div class="owl-carousel owl-theme viewed_slider">
-                            
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{ asset('public/frontend/images/1.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">Rs.525<span>Rs.700</span></div>
-                                        <div class="viewed_name"><a href="#">Wallet for Men</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{ asset('public/frontend/images/2.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">Rs.2625<span>Rs.3500</span></div>
-                                        <div class="viewed_name"><a href="#">Anti-theft Bag with usb port</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{ asset('public/frontend/images/3.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">Rs.500</div>
-                                        <div class="viewed_name"><a href="#">Printed T-shirt for men</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{ asset('public/frontend/images/4.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">Rs.2500</div>
-                                        <div class="viewed_name"><a href="#">Converse Shoe</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{ asset('public/frontend/images/5.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">Rs.1125<span>Rs.1500</span></div>
-                                        <div class="viewed_name"><a href="#">Collection of 5 printed T-shirts</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="{{ asset('public/frontend/images/6.jpg')}}" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">Rs.800</div>
-                                        <div class="viewed_name"><a href="#">Mini purse for Ladies</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
 <!-- Modal -->
@@ -965,7 +849,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
             $.ajax({
                 url: " {{ url('add/to/cart/') }}/"+id,
                 type:"GET",
-                datType:"json",
+                dataType:"json",
                 success:function(data){
              const Toast = Swal.mixin({
                   toast: true,

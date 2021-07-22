@@ -281,24 +281,11 @@
                     <div class="footer_column">
                         <div class="footer_title">Find it Fast</div>
                         <ul class="footer_list">
-                            <li><a href="#">Men's Upperwears</a></li>
-                            <li><a href="#">Men's Bottomwears</a></li>
-                            <li><a href="#">Men's Innerwears</a></li>
-                            <li><a href="#">Men's Shoes</a></li>
-                            <li><a href="#">Men's Accessories</a></li>
-                            <li><a href="#">Kids' Dresses</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2">
-                    <div class="footer_column">
-                        <ul class="footer_list footer_list_2">
-                        <li><a href="#">Women's Upperwears</a></li>
-                            <li><a href="#">Women's Bottomwears</a></li>
-                            <li><a href="#">Women's Innerwears</a></li>
-                            <li><a href="#">Women'ss Shoes</a></li>
-                            <li><a href="#">Women's Accessories</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Watches & Accessories</a></li>
+                            <li><a href="#">Bags & Purse</a></li>
                         </ul>
                     </div>
                 </div>

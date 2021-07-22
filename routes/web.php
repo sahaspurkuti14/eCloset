@@ -125,3 +125,21 @@ Route::get('admin/success/payment', 'Admin\OrderController@SuccessPayment')->nam
 Route::get('admin/delevery/process/{id}', 'Admin\OrderController@DeleveryProcess');
 Route::get('admin/delevery/done/{id}', 'Admin\OrderController@DeleveryDone');
 
+// Admin Role Routes 
+
+Route::get('admin/all/user', 'Admin\UserRoleController@UserRole')->name('admin.all.user');
+
+Route::get('admin/create/admin', 'Admin\UserRoleController@UserCreate')->name('create.admin');
+
+Route::post('admin/store/admin', 'Admin\UserRoleController@UserStore')->name('store.admin');
+
+Route::get('delete/admin/{id}', 'Admin\UserRoleController@UserDelete');
+Route::get('edit/admin/{id}', 'Admin\UserRoleController@UserEdit');
+
+Route::post('admin/update/admin', 'Admin\UserRoleController@UserUpdate')->name('update.admin');
+
+// Admin Site Setting Route 
+Route::get('admin/site/setting', 'Admin\SettingController@SiteSetting')->name('admin.site.setting');
+
+Route::post('admin/sitesetting', 'Admin\SettingController@UpdateSiteSetting')->name('update.sitesetting');
+
