@@ -110,7 +110,7 @@
             @elseif($order->status == 2)
             <span class="badge badge-warning">Progress</span>
             @elseif($order->status == 3)
-            <span class="badge badge-success">Delevered</span>
+            <span class="badge badge-success">Delivered</span>
             @else
             <span class="badge badge-danger">Cancel</span>
 
