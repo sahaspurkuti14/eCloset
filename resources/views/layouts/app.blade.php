@@ -42,7 +42,7 @@
                 <div class="row">
                     <div class="col d-flex flex-row">
                         <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/phone.png')}}" alt=""></div> +977 123456789 </div>
-                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">ecloset-support@gmail.com </a></div>
+                        <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="{{ asset('public/frontend/images/mail.png')}}" alt=""></div><a href="mailto:fastsales@gmail.com">ecloset_support@gmail.com </a></div>
                         <div class="top_bar_content ml-auto">
                            
 
