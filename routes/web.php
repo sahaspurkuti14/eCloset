@@ -131,6 +131,10 @@ Route::get('admin/seo', 'Admin\OrderController@seo')->name('admin.seo');
 Route::post('admin/seo/update', 'Admin\OrderController@UpdateSeo')->name('update.seo');
 
 
+// Order Tracking Route
+Route::post('order/traking', 'FrontController@OrderTraking')->name('order.tracking');
+
+
 // Admin Role Routes 
 
 Route::get('admin/all/user', 'Admin\UserRoleController@UserRole')->name('admin.all.user');
