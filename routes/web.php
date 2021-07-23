@@ -135,6 +135,21 @@ Route::post('admin/seo/update', 'Admin\OrderController@UpdateSeo')->name('update
 Route::post('order/traking', 'FrontController@OrderTraking')->name('order.tracking');
 
 
+// Order Report Routes 
+
+Route::get('admin/today/order', 'Admin\ReportController@TodayOrder')->name('today.order');
+Route::get('admin/today/delivery', 'Admin\ReportController@TodayDelivery')->name('today.delivery');
+
+Route::get('admin/this/month', 'Admin\ReportController@ThisMonth')->name('this.month');
+Route::get('admin/search/report', 'Admin\ReportController@Search')->name('search.report');
+
+Route::post('admin/search/by/year', 'Admin\ReportController@SearchByYear')->name('search.by.year');
+Route::post('admin/search/by/month', 'Admin\ReportController@SearchByMonth')->name('search.by.month');
+
+Route::post('admin/search/by/date', 'Admin\ReportController@SearchByDate')->name('search.by.date');
+
+
+
 // Admin Role Routes 
 
 Route::get('admin/all/user', 'Admin\UserRoleController@UserRole')->name('admin.all.user');
@@ -153,3 +168,13 @@ Route::get('admin/site/setting', 'Admin\SettingController@SiteSetting')->name('a
 
 Route::post('admin/sitesetting', 'Admin\SettingController@UpdateSiteSetting')->name('update.sitesetting'); 
 
+// Return Order Route
+
+Route::get('success/list/', 'PaymentController@SuccessList')->name('success.orderlist');
+
+Route::get('request/return/{id}', 'PaymentController@RequestReturn');
+
+Route::get('admin/return/request/', 'Admin\ReturnController@ReturnRequest')->name('admin.return.request');
+
+Route::get('admin/approve/return/{id}', 'Admin\ReturnController@ApproveReturn');
+Route::get('admin/all/return/', 'Admin\ReturnController@AllReturn')->name('admin.all.return');
