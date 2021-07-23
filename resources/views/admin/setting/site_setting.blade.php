@@ -1,6 +1,4 @@
-@extends('admin.admin_layouts')
-
- 
+@extends('admin.admin_layouts') 
 
 @section('admin_content')
   <!-- ########## START: MAIN PANEL ########## -->

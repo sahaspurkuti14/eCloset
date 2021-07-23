@@ -1,14 +1,15 @@
-@extends('admin.admin_layouts')
+@extends('layouts.app')
+@section('content')
 
-@section('admin_content')
 
- <div class="sl-mainpanel"> 
+<div class="container">
+<div class="sl-mainpanel"> 
       <div class="sl-pagebody">
-
+		<br>
       <div class="card pd-20 pd-sm-40">
-          <h6 class="card-body-title">Order Details  </h6>
+          <h6 class="card-body-title">Order Details </h6>
 
-
+	<br>
   <div class="row">
   	<div class="col-md-6">
             <div class="card">
@@ -131,6 +132,9 @@
 
   </div>
 
+  <br>
+
+
  <div class="row">
 
  <div class="card pd-20 pd-sm-40 col-lg-12">
@@ -177,28 +181,7 @@
 
  	
  </div>
-
-
-  @if($order->status == 0)
-  <a href="{{ url('admin/payment/accept/'.$order->id) }}" class="btn btn-info">Payment Accept </a>
-  <a href="{{ url('admin/payment/cancel/'.$order->id) }}" class="btn btn-danger">Order Cancel </a>
-  @elseif($order->status == 1)
-  <a href="{{ url('admin/delevery/process/'.$order->id) }}" class="btn btn-info">Process Delivery </a>
-  @elseif($order->status == 2)
-  <a href="{{ url('admin/delevery/done/'.$order->id) }}" class="btn btn-success">Delivery Done </a>
-  @elseif($order->status == 4)
-  <strong class="text-danger text-center"> This order is cancelled </strong>
-  @else
-  <strong class="text-success text-center">This product is successfuly Delivered  </strong>
-  @endif
-
-
-  
-
-
-
-     </div>
-   </div>
 </div>
+<br><br><br><br><br><br><br>
+
  @endsection
-      	

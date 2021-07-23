@@ -35,10 +35,10 @@
                 <tr>
                   <td>{{ $row->payment_type }}</td>
                   <td>{{ $row->blnc_transection }}</td>
-                  <td>{{ $row->subtotal }} $</td>
-                  <td>{{ $row->shipping }} $</td>
-                  <td>{{ $row->total }} $</td>
-                  <td>{{ $row->date }}  </td>
+                  <td>Rs.{{ $row->subtotal }} </td>
+                  <td>Rs.{{ $row->shipping }} </td>
+                  <td>Rs.{{ $row->total }} </td>
+                  <td>Rs.{{ $row->date }}  </td>
 
                   <td>
              @if($row->return_order == 1)

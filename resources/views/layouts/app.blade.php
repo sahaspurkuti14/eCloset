@@ -429,8 +429,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
              e.preventDefault();
              var link = $(this).attr("href");
                 swal({
-                  title: "Are you Want to Return?",
-                  text: "Once return, this will return your money!",
+                  title: "Are you sure?",
+                  text: "Once you return this, the money will be refunded.",
                   icon: "warning",
                   buttons: true,
                   dangerMode: true,

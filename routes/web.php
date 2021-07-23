@@ -178,3 +178,5 @@ Route::get('admin/return/request/', 'Admin\ReturnController@ReturnRequest')->nam
 
 Route::get('admin/approve/return/{id}', 'Admin\ReturnController@ApproveReturn');
 Route::get('admin/all/return/', 'Admin\ReturnController@AllReturn')->name('admin.all.return');
+//user order details
+Route::get('order/details/{id}', 'HomeController@OrderDetails');

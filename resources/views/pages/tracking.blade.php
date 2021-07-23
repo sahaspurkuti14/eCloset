@@ -82,10 +82,10 @@
   	<li class="list-group-item"> <b>Payment Type:</b> {{ $track->payment_type  }} </li>
   	<li class="list-group-item"> <b>Transection ID:</b> {{ $track->payment_id  }}</li>
   	<li class="list-group-item"> <b>Balance ID:</b> {{ $track->blnc_transection  }}</li>
-  	<li class="list-group-item"> <b>Subtotal:</b> $ {{ $track->subtotal  }}</li>
-  	<li class="list-group-item"> <b>Shipping:</b> $ {{ $track->shipping  }}</li>
-  	<li class="list-group-item"> <b>Vat:</b> $ {{ $track->vat  }}</li>
-  	<li class="list-group-item"> <b>Total:</b> $ {{ $track->total  }}</li>
+  	<li class="list-group-item"> <b>Subtotal:</b> Rs. {{ $track->subtotal  }}</li>
+  	<li class="list-group-item"> <b>Shipping:</b> Rs. {{ $track->shipping  }}</li>
+  	<li class="list-group-item"> <b>Vat:</b> Rs. {{ $track->vat  }}</li>
+  	<li class="list-group-item"> <b>Total:</b> Rs. {{ $track->total  }}</li>
   	<li class="list-group-item"> <b>Month:</b> {{ $track->month  }}</li>
   	<li class="list-group-item"> <b>Date:</b> {{ $track->date  }}</li>
   	<li class="list-group-item"> <b>Year:</b> {{ $track->year  }}</li>

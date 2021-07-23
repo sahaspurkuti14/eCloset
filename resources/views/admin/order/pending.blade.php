@@ -35,9 +35,9 @@
                 <tr>
                   <td>{{ $row->payment_type }}</td>
                   <td>{{ $row->blnc_transection }}</td>
-                  <td>{{ $row->subtotal }} $</td>
-                  <td>{{ $row->shipping }} $</td>
-                  <td>{{ $row->total }} $</td>
+                  <td>Rs.{{ $row->subtotal }} </td>
+                  <td>Rs.{{ $row->shipping }} </td>
+                  <td>Rs.{{ $row->total }} </td>
                   <td>{{ $row->date }}  </td>
 
                   <td>
@@ -48,7 +48,7 @@
             @elseif($row->status == 2)
             <span class="badge badge-warning">Progress</span>
             @elseif($row->status == 3)
-            <span class="badge badge-success">Delevered</span>
+            <span class="badge badge-success">Delivered</span>
             @else
             <span class="badge badge-danger">Cancel</span>
 

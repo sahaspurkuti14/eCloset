@@ -133,23 +133,28 @@
   <li class="nav-item">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Product Details</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Video Link</a>
-  </li>
+  
   <li class="nav-item">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Product Review</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Video Link</a>
+  </li>
+   
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   	<br>{!! $product->product_details !!}</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-  	<br>{{ $product->video_link }}</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>
 
-  <div class="fb-comments" data-href="{{ Request::url() }}" data-width="" data-numposts="5"></div>
+<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>
+
+  <!-- <div class="fb-comments" data-href="{{ Request::url() }}" data-width="" data-numposts="5"></div> -->
 
   </div>
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  	<br>{{ $product->video_link }}</div>
+  
 </div>
 
 					 

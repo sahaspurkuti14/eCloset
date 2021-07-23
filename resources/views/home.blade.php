@@ -27,7 +27,7 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
             <tr>
               <td scope="col">{{ $row->payment_type }} </td>
               <td scope="col">{{ $row->payment_id }} </td>
-              <td scope="col">{{ $row->total }}Rs </td>
+              <td scope="col">Rs.{{ $row->total }} </td>
               <td scope="col">{{ $row->date }}  </td>
 
                <td scope="col">
@@ -48,7 +48,7 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
 
               <td scope="col">{{ $row->status_code }}  </td>
               <td scope="col">
-             <a href="" class="btn btn-sm btn-info"> View</a>
+             <a href="{{ url('order/details/'.$row->id) }}" class="btn btn-sm btn-info"> View</a>
                </td>
             </tr>
              @endforeach
