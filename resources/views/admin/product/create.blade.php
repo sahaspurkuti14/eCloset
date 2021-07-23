@@ -46,7 +46,7 @@
 
                <div class="col-lg-6">
                 <div class="form-group">
-                  <label class="form-control-label">Discount Price: <span class="tx-danger">*</span></label>
+                  <label class="form-control-label">Discount Price: <span class="tx-danger"></span></label>
                   <input class="form-control" type="text" name="discount_price"  placeholder="Discount Price">
                 </div>
               </div><!-- col-4 -->
@@ -125,7 +125,7 @@
 
                 <div class="col-lg-12">
                 <div class="form-group">
-                  <label class="form-control-label">Video Link: <span class="tx-danger">*</span></label>
+                  <label class="form-control-label">Video Link: <span class="tx-danger"></span></label>
                   <input class="form-control" name="video_link" placeholder="Video Link" >
                 </div>
               </div><!-- col-4 -->

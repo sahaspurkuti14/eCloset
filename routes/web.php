@@ -141,5 +141,5 @@ Route::post('admin/update/admin', 'Admin\UserRoleController@UserUpdate')->name('
 // Admin Site Setting Route 
 Route::get('admin/site/setting', 'Admin\SettingController@SiteSetting')->name('admin.site.setting');
 
-Route::post('admin/sitesetting', 'Admin\SettingController@UpdateSiteSetting')->name('update.sitesetting');
+Route::post('admin/sitesetting', 'Admin\SettingController@UpdateSiteSetting')->name('update.sitesetting'); 
 
