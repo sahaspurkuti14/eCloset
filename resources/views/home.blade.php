@@ -48,7 +48,7 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
 
               <td scope="col">{{ $row->status_code }}  </td>
               <td scope="col">
-             <a href="" class="btn btn-sm btn-info"> View</a>
+             <a href="" class="btn btn-sm btn-info"> View</a>   
                </td>
             </tr>
              @endforeach
