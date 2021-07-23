@@ -439,8 +439,8 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
 @endphp
 
-    <div class="new_arrivals">
-        <div class="container">
+    <div class="new_arrivals" style="background-color:#E5F3FB;">
+        <div class="container" >
             <div class="row">
                 <div class="col">
                     <div class="tabbed_container">
