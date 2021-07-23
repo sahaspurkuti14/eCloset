@@ -261,7 +261,7 @@ $setting = DB::table('sitesetting')->first();
 
  @endphp
 
-    <footer class="footer">
+    <footer class="footer"style="background-color: #DADADA;">
         <div class="container">
             <div class="row">
 
@@ -320,7 +320,7 @@ $setting = DB::table('sitesetting')->first();
 
     <!-- Copyright -->
 
-    <div class="copyright">
+    <div class="copyright" style="background-color: #F1F1F1;">
         <div class="container">
             <div class="row">
                 <div class="col">
