@@ -96,6 +96,13 @@
                    <span class="badge btn-info">setting </span> 
                   @else
                   @endif 
+
+                  @if($row->stock == 1)
+                   <span class="badge btn-info">Stock </span> 
+                  @else
+                  @endif
+
+
                   
 
 

@@ -48,6 +48,7 @@ class UserRoleController extends Controller
  	$data['contact'] = $request->contact;
  	$data['comment'] = $request->comment;
  	$data['setting'] = $request->setting;
+	 $data['stock'] = $request->stock;
 
  	$data['type'] = 2;
 
@@ -102,6 +103,7 @@ class UserRoleController extends Controller
  	$data['contact'] = $request->contact;
  	$data['comment'] = $request->comment;
  	$data['setting'] = $request->setting;
+	 $data['stock'] = $request->stock;
  
  	 
 
