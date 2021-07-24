@@ -178,6 +178,9 @@ Route::get('admin/return/request/', 'Admin\ReturnController@ReturnRequest')->nam
 
 Route::get('admin/approve/return/{id}', 'Admin\ReturnController@ApproveReturn');
 Route::get('admin/all/return/', 'Admin\ReturnController@AllReturn')->name('admin.all.return');
+<<<<<<< HEAD
 
 // Order Stock Route 
 Route::get('admin/product/stock', 'Admin\UserRoleController@ProductStock')->name('admin.product.stock');
+=======
+

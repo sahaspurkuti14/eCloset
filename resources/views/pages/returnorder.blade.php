@@ -39,7 +39,7 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
               @endif   
         </td>
 
-              <td scope="col">{{ $row->total }}$  </td>
+              <td scope="col">Rs.{{ $row->total }}  </td>
               <td scope="col">{{ $row->date }}  </td>
 
                <td scope="col">
@@ -50,9 +50,9 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
             @elseif($row->status == 2)
             <span class="badge badge-warning">Progress</span>
             @elseif($row->status == 3)
-            <span class="badge badge-success">Delevered</span>
+            <span class="badge badge-success">Delivered</span>
             @else
-            <span class="badge badge-danger">Cancle</span>
+            <span class="badge badge-danger">Cancel</span>
 
           @endif  
 

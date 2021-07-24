@@ -415,8 +415,8 @@
              e.preventDefault();
              var link = $(this).attr("href");
                 swal({
-                  title: "Are you Want to delete?",
-                  text: "Once Delete, This will be Permanently Delete!",
+                  title: "Are you sure?",
+                  text: "This will be Permanently Deleted!",
                   icon: "warning",
                   buttons: true,
                   dangerMode: true,

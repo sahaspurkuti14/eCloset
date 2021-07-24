@@ -261,7 +261,7 @@ $setting = DB::table('sitesetting')->first();
 
  @endphp
 
-    <footer class="footer">
+    <footer class="footer"style="background-color: #DADADA;">
         <div class="container">
             <div class="row">
 
@@ -320,7 +320,7 @@ $setting = DB::table('sitesetting')->first();
 
     <!-- Copyright -->
 
-    <div class="copyright">
+    <div class="copyright" style="background-color: #F1F1F1;">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -429,8 +429,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
              e.preventDefault();
              var link = $(this).attr("href");
                 swal({
-                  title: "Are you Want to Return?",
-                  text: "Once return, this will return your money!",
+                  title: "Are you sure?",
+                  text: "Once you return this, the money will be refunded.",
                   icon: "warning",
                   buttons: true,
                   dangerMode: true,

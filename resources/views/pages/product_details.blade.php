@@ -77,13 +77,9 @@
           		<label for="exampleFormControlSelect1">Quantity</label>
           		 <input class="form-control" type="number" value="1" pattern="[0-9]" name="qty">	
           	</div> 
-          	</div>    
-
- 
-
-          </div> 
-									 
-								</div>
+          	</div>   
+          </div>
+		</div>
 
 								 
  @if($product->discount_price == NULL)
@@ -98,12 +94,10 @@
 									<div class="product_fav"><i class="fas fa-heart"></i></div>
 								</div>
 
-<br><br>
-
-
+<br><br>               
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox"></div>
-            				
+                       				
 								
 							</form>
 						</div>
@@ -133,23 +127,28 @@
   <li class="nav-item">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Product Details</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Video Link</a>
-  </li>
+  
   <li class="nav-item">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Product Review</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Video Link</a>
+  </li>
+   
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   	<br>{!! $product->product_details !!}</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-  	<br>{{ $product->video_link }}</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>
 
-  <div class="fb-comments" data-href="{{ Request::url() }}" data-width="" data-numposts="5"></div>
+<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><br>
+
+  <!-- <div class="fb-comments" data-href="{{ Request::url() }}" data-width="" data-numposts="5"></div> -->
 
   </div>
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  	<br>{{ $product->video_link }}</div>
+  
 </div>
 
 					 
@@ -163,8 +162,10 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
 
+
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e4b85f98de5201f"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60fae47589756329"></script>
+
 
 
 @endsection
