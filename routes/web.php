@@ -186,6 +186,13 @@ Route::get('admin/all/return/', 'Admin\ReturnController@AllReturn')->name('admin
 //user order details
 Route::get('order/details/{id}', 'HomeController@OrderDetails');
 
+/// Contact page Routes
+
+Route::get('contact/page', 'ContactController@Contact')->name('contact.page');
+Route::post('contact/form', 'ContactController@ContactForm')->name('contact.form');
+
+Route::get('admin/all/message', 'ContactController@AllMessage')->name('all.message');
+
 // Socialite Route
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
