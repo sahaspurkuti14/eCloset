@@ -142,15 +142,6 @@
 
          <div class="col-lg-4">
         <label class="ckbox">
-          <input type="checkbox" name="comment" value="1">
-          <span>  Comment</span>
-        </label>
-
-        </div> <!-- col-4 --> 
-
-
-         <div class="col-lg-4">
-        <label class="ckbox">
           <input type="checkbox" name="setting" value="1">
           <span>  Setting</span>
         </label>

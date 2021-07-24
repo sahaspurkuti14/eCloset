@@ -5,7 +5,7 @@
 $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')->limit(10)->get();
 @endphp 
 
-<div class="contact_form">
+<div class="contact_form" style="margin-top:5%;">
   <div class="container"> 
     <div class="row">
       <div class="col-8 card">
@@ -65,7 +65,7 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
 
       <div class="col-4">
         <div class="card">
-          <img src="{{ asset('public/frontend/images/kaziariyan.png') }}" class="card-img-top" style="height: 90px; width: 90px; margin-left: 34%;">
+          <img src="{{ asset('public/frontend/images/userdp.png') }}" class="card-img-top" style="height: 90px; width: 90px; margin-left: 36%; border-radius: 50%;">
           <div class="card-body">
             <h5 class="card-title text-center">{{ Auth::user()->name }}</h5>
             
@@ -92,6 +92,8 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
   
 
 </div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
 
 
 
