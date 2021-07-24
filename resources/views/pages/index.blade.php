@@ -205,79 +205,6 @@
     </div>
     </div>
 
-    <!-- Popular Categories -->
-
-    <div class="popular_categories">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="popular_categories_content">
-                        <div class="popular_categories_title">Popular Categories</div>
-                        <div class="popular_categories_slider_nav">
-                            <div class="popular_categories_prev popular_categories_nav"><i class="fas fa-angle-left ml-auto"></i></div>
-                            <div class="popular_categories_next popular_categories_nav"><i class="fas fa-angle-right ml-auto"></i></div>
-                        </div>
-                        <div class="popular_categories_link"><a href="#">full catalog</a></div>
-                    </div>
-                </div>
-                
-
-
-            @php
-            $category = DB::table('categories')->get();
-            @endphp        
-                <!-- Popular Categories Slider -->
-
-                <div class="col-lg-9">
-                    <div class="popular_categories_slider_container">
-                        <div class="owl-carousel owl-theme popular_categories_slider">
-
-                        @foreach($category as $cat)
-                            <!-- Popular Categories Item -->
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/man-icon.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Men</div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/woman-icon.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Women</div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/kid-icon.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Kids</div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/watch-icon.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Watches & Accessories</div>
-                                </div>
-                            </div>
-
-                            <div class="owl-item">
-                                <div class="popular_category d-flex flex-column align-items-center justify-content-center">
-                                    <div class="popular_category_image"><img src="{{ asset('public/frontend/images/beauty-icon.png')}}" alt=""></div>
-                                    <div class="popular_category_text">Bags & Purse</div>
-                                </div>
-                            </div>
-
-                          @endforeach
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Banner -->
   @php
      $mid = DB::table('products')
@@ -440,7 +367,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 @endphp
 
     <div class="new_arrivals" style="background-color:#E5F3FB;">
-        <div class="container" >
+    <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="tabbed_container">
@@ -475,17 +402,18 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
 
                 
-                <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
-                <div class="product_extras">
-                    
-                <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
+                <div class="product_name"><div><a href="{{url('product/details/'.$row->id.'/'.$row->product_name)}}">{{ $row->product_name }}</a></div></div>
+                <div class="product_extras">   
+
+                            <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                 </div>
             </div>
 
 
-             <button class="addwishlist" data-id="{{ $row->id }}" >
-            <div class="product_fav"><i class="fas fa-heart"></i></div>
-            </button>
+            
+            <button class="addwishlist" data-id="{{ $row->id }}" >
+                    <div class="product_fav"><i class="fas fa-heart"></i></div>
+                </button>
             
 
             <ul class="product_marks">
@@ -523,7 +451,8 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>   
+        
     </div>
 
     <!-- Hot New Category Three -->
@@ -572,7 +501,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 
 
                 
-                <div class="product_name"><div><a href="product.html">{{ $row->product_name }}</a></div></div>
+                <div class="product_name"><div><a href="{{url('product/details/'.$row->id.'/'.$row->product_name)}}">{{ $row->product_name }}</a></div></div>
                 <div class="product_extras">
                 <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                 </div>
@@ -677,7 +606,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
 <div class="product_price discount">Rs.{{ $row->discount_price }}<span>Rs.{{ $row->selling_price }}</span></div>
       @endif 
 
-      <button id="{{ $row->id }}" class="product_cart_button addcart" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
+      <button type="button" class="btn btn-primary addcart" id="{{ $row->id }}" data-toggle="modal" data-target="#cartmodal" onclick="productview(this.id)">Add to Cart</button>
                         </div>
                     </div>
                     <ul class="trends_marks">
@@ -721,7 +650,7 @@ $product = DB::table('products')->where('category_id',$catid)->where('status',1)
        <div class="row">
         <div class="col-md-4">
             <div class="card">
-                <img src="" id="pimage" style="height: 220px; width: 200px;">
+                <img src="{{ asset( $row->image_one )}}" id="pimage" style="height: 220px; width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title text-center" id="pname">  </h5>
                     

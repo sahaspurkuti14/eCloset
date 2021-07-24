@@ -237,7 +237,9 @@
      @endif
 
 
-     @if(Auth::user()->contact == 1)
+
+    @if(Auth::user()->contact == 1)
+
          <a href="#" class="sl-menu-link">
           <div class="sl-menu-item">
             <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
