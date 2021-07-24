@@ -40,7 +40,7 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
             @elseif($row->status == 3)
             <span class="badge badge-success">Delivered</span>
             @else
-            <span class="badge badge-danger">Cancel</span>
+            <span class="badge badge-danger">Cancell</span>
 
           @endif  
 
