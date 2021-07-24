@@ -238,10 +238,6 @@
 
 
 
-
-
-
-
 @if(Auth::user()->contact == 1)
          <a href="#" class="sl-menu-link">
           <div class="sl-menu-item">

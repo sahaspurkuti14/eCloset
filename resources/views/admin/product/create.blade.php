@@ -209,7 +209,7 @@
          <div class="col-lg-4">
         <label class="ckbox">
           <input type="checkbox" name="trend" value="1">
-          <span>Trend Product </span>
+          <span>featured Product </span>
         </label>
 
         </div> <!-- col-4 --> 

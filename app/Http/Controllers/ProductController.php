@@ -22,9 +22,11 @@ class ProductController extends Controller
     	$product_color = explode(',', $color);
     	
     	$size = $product->product_size;
-    	$product_size = explode(',', $size);		
+    	$product_size = explode(',', $size);
+		
+		$relatedProducts = DB::table('products')->where('id','!=',$id) ->where(['category_id'=>$product->category_id])->get();
 
-    	return view('pages.product_details',compact('product','product_color','product_size'));
+    	return view('pages.product_details',compact('product','product_color','product_size','relatedProducts'));
 
     }
 

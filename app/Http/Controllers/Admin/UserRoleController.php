@@ -46,7 +46,7 @@ class UserRoleController extends Controller
  	$data['role'] = $request->role;
  	$data['return'] = $request->return;
  	$data['contact'] = $request->contact;
- 	$data['comment'] = $request->comment;
+ 	
  	$data['setting'] = $request->setting;
 	 $data['stock'] = $request->stock;
 
