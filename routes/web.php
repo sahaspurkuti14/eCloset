@@ -134,6 +134,9 @@ Route::post('admin/seo/update', 'Admin\OrderController@UpdateSeo')->name('update
 // Order Tracking Route
 Route::post('order/traking', 'FrontController@OrderTraking')->name('order.tracking');
 
+// Order Stock Route 
+Route::get('admin/product/stock', 'Admin\UserRoleController@ProductStock')->name('admin.product.stock');
+
 
 // Order Report Routes 
 
