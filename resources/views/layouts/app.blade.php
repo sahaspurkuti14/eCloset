@@ -116,7 +116,7 @@ $setting = DB::table('sitesetting')->first();
                         <div class="header_search">
                             <div class="header_search_content">
                                 <div class="header_search_form_container">
-                <form  method="post" action="#" class="header_search_form clearfix">
+                <form  method="post" action="{{ route('product.search') }}" class="header_search_form clearfix">
                     @csrf
    <input type="search" required="required" class="header_search_input" placeholder="Search for products..." name="search">
                     <div class="custom_dropdown">
@@ -188,7 +188,7 @@ $setting = DB::table('sitesetting')->first();
     <div class="chat-bar-collapsible">
         
        
-            <i id="chat-icon" type="button" style="color: white" class="fa fa-fw fa-comments-o collapsible"></i>
+            <i id="chat-icon" type="button" style="color: white" class="fa fa-fw fa-comments-o collapsible">          Chat With Me</i>
        
 
 

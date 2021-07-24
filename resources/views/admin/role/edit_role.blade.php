@@ -146,16 +146,6 @@
 
          <div class="col-lg-4">
         <label class="ckbox">
-          <input type="checkbox" name="comment" value="1" <?php if ($user->comment == 1) {
-           echo "checked"; }  ?> >
-          <span>  Comment</span>
-        </label>
-
-        </div> <!-- col-4 --> 
-
-
-         <div class="col-lg-4">
-        <label class="ckbox">
           <input type="checkbox" name="setting" value="1"<?php if ($user->setting == 1) {
            echo "checked"; }  ?> >
           <span>  Setting</span>

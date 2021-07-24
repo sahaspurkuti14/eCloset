@@ -866,6 +866,7 @@ select option
 	padding-left: 35px;
 	cursor: pointer;
 	z-index: 1;
+	position:relative;
 }
 .cat_menu_title
 {
@@ -3532,6 +3533,7 @@ select option
 {
 	padding-top: 52px;
 	padding-bottom: 40px;
+
 }
 .footer .logo_container
 {
@@ -3636,6 +3638,8 @@ select option
 {
 	width: 100%;
 	background: #fafafa;
+	display: block;
+	z-index: 9;
 }
 .copyright_container
 {
