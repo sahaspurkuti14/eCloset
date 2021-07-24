@@ -43,12 +43,8 @@ $user = DB::table('users')->get();
                 <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
-                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-<<<<<<< HEAD
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $today }}</h3>
-=======
+                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>>
                 <h3 class="mg-b-0 tx-white tx-lato tx-bold">$ {{ $today }}</h3>
->>>>>>> 780f4e9551c6d06280310da7294ec66cda229804
               </div><!-- card-body -->
                
               
@@ -62,11 +58,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-<<<<<<< HEAD
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $month }}</h3>
-=======
                 <h3 class="mg-b-0 tx-white tx-lato tx-bold">$ {{ $month }}</h3>
->>>>>>> 780f4e9551c6d06280310da7294ec66cda229804
               </div><!-- card-body -->
               
             </div><!-- card -->
@@ -79,11 +71,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-<<<<<<< HEAD
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $year }}</h3>
-=======
                 <h3 class="mg-b-0 tx-white tx-lato tx-bold">$ {{ $year }}</h3>
->>>>>>> 780f4e9551c6d06280310da7294ec66cda229804
               </div><!-- card-body -->
              
               
@@ -97,11 +85,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-<<<<<<< HEAD
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $delivery ?? '' }} </h3>
-=======
                 <h3 class="mg-b-0 tx-white tx-lato tx-bold">$ {{ $delevery }} </h3>
->>>>>>> 780f4e9551c6d06280310da7294ec66cda229804
               </div><!-- card-body -->
              
             </div><!-- card -->
@@ -121,11 +105,7 @@ $user = DB::table('users')->get();
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-<<<<<<< HEAD
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $return }}</h3>
-=======
                 <h3 class="mg-b-0 tx-white tx-lato tx-bold">$ {{ $return }}</h3>
->>>>>>> 780f4e9551c6d06280310da7294ec66cda229804
               </div><!-- card-body -->
                
               
