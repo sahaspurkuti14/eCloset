@@ -1,10 +1,11 @@
+
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
-
+        
         var content = this.nextElementSibling;//so this returns immediate next element to the specified element
 
         if (content.style.maxHeight) {//if content.style.maxHeight=true then run this..
@@ -109,3 +110,4 @@ $("#textInput").keypress(function (e) {
         getResponse();
     }
 });
+

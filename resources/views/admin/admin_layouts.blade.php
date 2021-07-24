@@ -237,22 +237,6 @@
      @else
      @endif
 
-@if(Auth::user()->comment == 1)
-    <a href="#" class="sl-menu-link">
-          <div class="sl-menu-item">
-            <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
-            <span class="menu-item-label">Product Comments </span>
-            <i class="menu-item-arrow fa fa-angle-down"></i>
-          </div><!-- menu-item -->
-        </a><!-- sl-menu-link -->
-        <ul class="sl-menu-sub nav flex-column">
-          <li class="nav-item"><a href=" " class="nav-link">New Comments</a></li>
-           <li class="nav-item"><a href=" " class="nav-link">All Comments </a></li>
-           
-        </ul>
-     @else
-     @endif
-
 @if(Auth::user()->setting == 1)
           <a href="#" class="sl-menu-link">
           <div class="sl-menu-item">

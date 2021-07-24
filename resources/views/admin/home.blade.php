@@ -1,8 +1,33 @@
 @extends('admin.admin_layouts')
 
 @section('admin_content')
- <!-- ########## START: MAIN PANEL ########## -->
- <div class="sl-mainpanel">
+
+@php
+
+$date = date('d-m-y');
+$today = DB::table('orders')->where('date',$date)->sum('total');
+
+$month = date('F');
+$month = DB::table('orders')->where('month',$month)->sum('total');
+
+$year = date('Y');
+$year = DB::table('orders')->where('year',$year)->sum('total');
+
+$delevery = DB::table('orders')->where('date',$date)->where('status',3)->sum('total');
+
+$return = DB::table('orders')->where('return_order',2)->sum('total');
+
+$product = DB::table('products')->get();
+$brand = DB::table('brands')->get();
+$user = DB::table('users')->get();
+
+@endphp
+
+
+
+
+  <!-- ########## START: MAIN PANEL ########## -->
+    <div class="sl-mainpanel">
       <nav class="breadcrumb sl-breadcrumb">
         <a class="breadcrumb-item" href="index.html">eCloset</a>
         <span class="breadcrumb-item active">Dashboard</span>
@@ -14,97 +39,124 @@
           <div class="col-sm-6 col-xl-3">
             <div class="card pd-20 bg-primary">
               <div class="d-flex justify-content-between align-items-center mg-b-10">
-                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Today's Sales</h6>
+                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Today's Orders</h6>
                 <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.850</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $today }}</h3>
               </div><!-- card-body -->
-              <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
-                <div>
-                  <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
-                </div>
-                <div>
-                  <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">Rs.320</h6>
-                </div>
-              </div><!-- -->
+               
+              
             </div><!-- card -->
           </div><!-- col-3 -->
           <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
             <div class="card pd-20 bg-info">
-              <div class="d-flex justify-content-between align-items-center mg-b-10">
-                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">This Week's Sales</h6>
-                <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
-              </div><!-- card-header -->
-              <div class="d-flex align-items-center justify-content-between">
-                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.4,625</h3>
-              </div><!-- card-body -->
-              <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
-                <div>
-                  <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
-                </div>
-                <div>
-                  <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">Rs.320</h6>
-                </div>
-              </div><!-- -->
-            </div><!-- card -->
-          </div><!-- col-3 -->
-          <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
-            <div class="card pd-20 bg-purple">
               <div class="d-flex justify-content-between align-items-center mg-b-10">
                 <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">This Month's Sales</h6>
                 <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.11,908</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $month }}</h3>
               </div><!-- card-body -->
-              <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
-                <div>
-                  <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
-                </div>
-                <div>
-                  <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">Rs.320</h6>
-                </div>
-              </div><!-- -->
+              
             </div><!-- card -->
           </div><!-- col-3 -->
           <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
-            <div class="card pd-20 bg-sl-primary">
+            <div class="card pd-20 bg-purple">
               <div class="d-flex justify-content-between align-items-center mg-b-10">
                 <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">This Year's Sales</h6>
                 <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
               </div><!-- card-header -->
               <div class="d-flex align-items-center justify-content-between">
                 <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
-                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs.91,239</h3>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $year }}</h3>
               </div><!-- card-body -->
-              <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
-                <div>
-                  <span class="tx-11 tx-white-6">Gross Sales</span>
-                  <h6 class="tx-white mg-b-0">Rs.2,210</h6>
-                </div>
-                <div>
-                  <span class="tx-11 tx-white-6">Tax Return</span>
-                  <h6 class="tx-white mg-b-0">Rs.320</h6>
-                </div>
-              </div><!-- -->
+             
+              
+            </div><!-- card -->
+          </div><!-- col-3 -->
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+            <div class="card pd-20 bg-sl-primary">
+              <div class="d-flex justify-content-between align-items-center mg-b-10">
+                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Today Delivered</h6>
+                <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+              </div><!-- card-header -->
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $delivery ?? '' }} </h3>
+              </div><!-- card-body -->
+             
             </div><!-- card -->
           </div><!-- col-3 -->
         </div><!-- row -->
 
-        
+        <br><br>
 
-      
-      
+
+
+  <div class="row row-sm">
+          <div class="col-sm-6 col-xl-3">
+            <div class="card pd-20 bg-danger">
+              <div class="d-flex justify-content-between align-items-center mg-b-10">
+                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total Return</h6>
+                <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+              </div><!-- card-header -->
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">Rs. {{ $return }}</h3>
+              </div><!-- card-body -->
+               
+              
+            </div><!-- card -->
+          </div><!-- col-3 -->
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
+            <div class="card pd-20 bg-info">
+              <div class="d-flex justify-content-between align-items-center mg-b-10">
+                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total Product</h6>
+                <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+              </div><!-- card-header -->
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">  {{ count($product)  }}</h3>
+              </div><!-- card-body -->
+              
+            </div><!-- card -->
+          </div><!-- col-3 -->
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+            <div class="card pd-20 bg-purple">
+              <div class="d-flex justify-content-between align-items-center mg-b-10">
+                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total Brand</h6>
+                <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+              </div><!-- card-header -->
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">  {{ count($brand)  }}</h3>
+              </div><!-- card-body -->
+             
+              
+            </div><!-- card -->
+          </div><!-- col-3 -->
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+            <div class="card pd-20 bg-sl-primary">
+              <div class="d-flex justify-content-between align-items-center mg-b-10">
+                <h6 class="tx-11 tx-uppercase mg-b-0 tx-spacing-1 tx-white">Total User</h6>
+                <a href="" class="tx-white-8 hover-white"><i class="icon ion-android-more-horizontal"></i></a>
+              </div><!-- card-header -->
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="sparkline2">5,3,9,6,5,9,7,3,5,2</span>
+                <h3 class="mg-b-0 tx-white tx-lato tx-bold">  {{ count($user)  }} </h3>
+              </div><!-- card-body -->
+             
+            </div><!-- card -->
+          </div><!-- col-3 -->
+        </div><!-- row -->
+
+
+
+
+  
     </div><!-- sl-mainpanel -->
     <!-- ########## END: MAIN PANEL ########## -->
 @endsection

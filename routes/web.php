@@ -180,3 +180,10 @@ Route::get('admin/approve/return/{id}', 'Admin\ReturnController@ApproveReturn');
 Route::get('admin/all/return/', 'Admin\ReturnController@AllReturn')->name('admin.all.return');
 //user order details
 Route::get('order/details/{id}', 'HomeController@OrderDetails');
+
+// Socialite Route
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
+
+//Search route
+Route::post('product/search', 'CartController@Search')->name('product.search');

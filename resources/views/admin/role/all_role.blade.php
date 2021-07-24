@@ -92,11 +92,6 @@
                   @endif 
 
 
-                    @if($row->comment == 1)
-                   <span class="badge btn-danger">comment </span> 
-                  @else
-                  @endif 
-
                     @if($row->setting == 1)
                    <span class="badge btn-info">setting </span> 
                   @else
