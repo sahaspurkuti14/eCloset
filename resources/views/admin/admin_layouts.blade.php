@@ -237,6 +237,11 @@
      @endif
 
 
+    
+
+
+
+
 
 @if(Auth::user()->contact == 1)
          <a href="#" class="sl-menu-link">
