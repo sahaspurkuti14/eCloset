@@ -88,12 +88,16 @@ $product = DB::table('products')->where('id',$id)->first();
       }
 
   
-  public function CategoryView($id){
+  public function CategoryView ($id){
+	  
 
     $category_all =  DB::table('products')->where('category_id',$id)->paginate(10);
-    return view('pages.all_category',compact('category_all'));
+    //dd($category_all);
+	return view('pages.all_category',compact('category_all'));
 
   }
+
+
 
 
 

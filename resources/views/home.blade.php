@@ -19,7 +19,6 @@ $order = DB::table('orders')->where('user_id',Auth::id())->orderBy('id','DESC')-
               <th scope="col">Status  </th>
               <th scope="col">Status Code </th>
               <th scope="col">Action </th>
-
             </tr>
           </thead>
           <tbody>

@@ -36,29 +36,9 @@
 								 
 							</ul>
 						</div>
-						<div class="sidebar_section filter_by_section">
-							<div class="sidebar_title">Filter By</div>
-							<div class="sidebar_subtitle">Price</div>
-							<div class="filter_price">
-								<div id="slider-range" class="slider_range"></div>
-								<p>Range: </p>
-								<p><input type="text" id="amount" class="amount" readonly style="border:0; font-weight:bold;"></p>
-							</div>
-						</div>
+						
 						 
-						<div class="sidebar_section">
-							<div class="sidebar_subtitle brands_subtitle">Brands</div>
-							<ul class="brands_list">
-								
-                            @php
-                           $brands =  DB::table('brands')->get();
-                            @endphp
-								@foreach($brands as $row)
-			 <li class="brand"><a href="#">{{ $row->brand_name }}</a></li>
-								@endforeach
-								 
-							</ul>
-						</div>
+						
 					</div>
 
 				</div>
@@ -69,20 +49,8 @@
 
 					<div class="shop_content">
 						<div class="shop_bar clearfix">
-							<div class="shop_product_count"><span></span> products found</div>
-							<div class="shop_sorting">
-								<span>Sort by:</span>
-								<ul>
-									<li>
-										<span class="sorting_text">highest rated<i class="fas fa-chevron-down"></span></i>
-										<ul>
-											<li class="shop_sorting_button" data-isotope-option='{ "sortBy": "original-order" }'>highest rated</li>
-											<li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>name</li>
-											<li class="shop_sorting_button"data-isotope-option='{ "sortBy": "price" }'>price</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
+							<div class="shop_product_count"><span>1</span> products found</div>
+							
 						</div>
 
 						<div class="product_grid row">

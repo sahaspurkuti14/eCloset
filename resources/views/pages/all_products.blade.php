@@ -27,7 +27,7 @@
 							<div class="sidebar_title">Categories</div>
 							<ul class="sidebar_categories">
 								@foreach($categorys as $cat)
-								<li><a href="#">{{ $cat->category_name }}</a></li>
+								<li><a href="{{ url('allcategory/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
 								@endforeach
 								 
 							</ul>

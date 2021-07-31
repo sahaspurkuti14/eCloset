@@ -12,7 +12,7 @@
         </div><!-- sl-page-title -->
 
         <div class="card pd-20 pd-sm-40">
-          <h6 class="card-body-title">Order List  </h6>
+          <h6 class="card-body-title">Contact Messages  </h6>
            
 
           <div class="table-wrapper">

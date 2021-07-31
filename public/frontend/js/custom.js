@@ -905,6 +905,12 @@ $(document).ready(function()
 		}
 	}
 
+
+function sort_by(){
+  var sort_by_value=jQuery('#sort_by_value').val();
+  jQuery('#sort').val(sort_by_value);
+  jQuery('#categoryFilter').submit();
+}
 	/* 
 
 	19. Init Brands Slider

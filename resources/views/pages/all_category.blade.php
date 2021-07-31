@@ -31,34 +31,12 @@
                             @endphp
 
 								@foreach($category as $cat)
-				 <li><a href="{{ url('allcategory/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
+				        <li><a href="{{ url('allcategory/'.$cat->id) }}">{{ $cat->category_name }}</a></li>
 								@endforeach
 								 
 							</ul>
 						</div>
-						<div class="sidebar_section filter_by_section">
-							<div class="sidebar_title">Filter By</div>
-							<div class="sidebar_subtitle">Price</div>
-							<div class="filter_price">
-								<div id="slider-range" class="slider_range"></div>
-								<p>Range: </p>
-								<p><input type="text" id="amount" class="amount" readonly style="border:0; font-weight:bold;"></p>
-							</div>
-						</div>
-						 
-						<div class="sidebar_section">
-							<div class="sidebar_subtitle brands_subtitle">Brands</div>
-							<ul class="brands_list">
-								
-                            @php
-                           $brands =  DB::table('brands')->get();
-                            @endphp
-								@foreach($brands as $row)
-			 <li class="brand"><a href="#">{{ $row->brand_name }}</a></li>
-								@endforeach
-								 
-							</ul>
-						</div>
+					
 					</div>
 
 				</div>
@@ -66,29 +44,20 @@
 				<div class="col-lg-9">
 					
 					<!-- Shop Content -->
+              <!-- @php
+              $category =  DB::table('products')->where('category_id','=','value')->count();
+              @endphp -->
 
 					<div class="shop_content">
 						<div class="shop_bar clearfix">
-							<div class="shop_product_count"><span>2</span> products found</div>
-							<div class="shop_sorting">
-								<span>Sort by:</span>
-								<ul>
-									<li>
-										<span class="sorting_text">highest rated<i class="fas fa-chevron-down"></span></i>
-										<ul>
-											<li class="shop_sorting_button" data-isotope-option='{ "sortBy": "original-order" }'>highest rated</li>
-											<li class="shop_sorting_button" data-isotope-option='{ "sortBy": "name" }'>name</li>
-											<li class="shop_sorting_button"data-isotope-option='{ "sortBy": "price" }'>price</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
+							<div class="shop_product_count"><span>{{count($category_all)}}</span> products found</div>
+
 						</div>
 
 						<div class="product_grid row">
 							<div class="product_grid_border"></div>
-
-                     @foreach($category_all as $pro)
+    
+              @foreach($category_all as $pro)
 							<!-- Product Item -->
 							<div class="product_item is_new">
 								<div class="product_border"></div>
